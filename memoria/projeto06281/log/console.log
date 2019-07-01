@@ -1,0 +1,203 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# Design Explorer: Shortcut to "C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto1.aws" design added.
+acom -O3 -e 100 -work projeto06281 -2002  $dsn/src/readtxt.vhd $dsn/src/cacheI.vhd $dsn/src/cacheD.vhd $dsn/src/ram.vhd $dsn/src/Fub2.bde $dsn/src/uc+hierarquia.bde $dsn/src/Fub1.bde
+# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\Fub2.bde'.
+# DRC: Warning: Fub2.bde - 0 error(s), 6 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\compile\Fub2.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\Fub2.bde ...
+# Generation successful
+# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\uc+hierarquia.bde'.
+# DRC: Warning: uc+hierarquia.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\compile\uc+hierarquia.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\uc+hierarquia.bde ...
+# Generation successful
+# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\Fub1.bde'.
+# DRC: Fub1.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\compile\Fub1.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\Fub1.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\readtxt.vhd
+# Compile Entity "read_file"
+# Compile Architecture "beha" of Entity "read_file"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheI.vhd
+# Compile Entity "cacheI"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheD.vhd
+# Compile Entity "cacheD"
+# Error: COMP96_0018: cacheD.vhd : (11, 2): Identifier expected.
+# Error: COMP96_0018: cacheD.vhd : (30, 2): Identifier expected.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\ram.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\Fub2.vhd
+# Compile Entity "blocs"
+# Compile Architecture "blocs" of Entity "blocs"
+# Error: COMP96_0207: Fub2.bde(Fub2.vhd) : (88, 1): No actual specified for local port "ender".
+# Error: COMP96_0207: Fub2.bde(Fub2.vhd) : (97, 1): No actual specified for local port "endereco_in".
+# File: .\..\compile\uc+hierarquia.vhd
+# Compile Entity "\uc+hierarquia\"
+# Compile Architecture "\uc+hierarquia\" of Entity "\uc+hierarquia\"
+# Warning: ELAB1_0026: uc+hierarquia.bde(uc+hierarquia.vhd) : (45, 0): There is no default binding for component "Fub1". (No entity named "Fub1" was found).
+# Warning: ELAB1_0026: uc+hierarquia.bde(uc+hierarquia.vhd) : (47, 0): There is no default binding for component "Fub2". (No entity named "Fub2" was found).
+# File: .\..\compile\Fub1.vhd
+# Compile Entity "Fub1"
+# Compile Architecture "Fub1" of Entity "Fub1"
+# Compile failure 4 Errors 2 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work projeto06281 -2002  $dsn/src/cacheD.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheD.vhd
+# Compile Entity "cacheD"
+# Error: COMP96_0018: cacheD.vhd : (11, 2): Identifier expected.
+# Error: COMP96_0018: cacheD.vhd : (30, 2): Identifier expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work projeto06281 -2002  $dsn/src/cacheD.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheD.vhd
+# Compile Entity "cacheD"
+# Error: COMP96_0018: cacheD.vhd : (30, 2): Identifier expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work projeto06281 -2002  $dsn/src/cacheD.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheD.vhd
+# Compile Entity "cacheD"
+# Error: COMP96_0071: cacheD.vhd : (15, 41): Operator "-" is not defined for such operands.
+# Error: COMP96_0094: cacheD.vhd : (15, 30): Locally static expression is required in the range definition.
+# Error: COMP96_0071: cacheD.vhd : (16, 38): Operator "-" is not defined for such operands.
+# Error: COMP96_0094: cacheD.vhd : (16, 28): Locally static expression is required in the range definition.
+# Error: COMP96_0071: cacheD.vhd : (17, 41): Operator "-" is not defined for such operands.
+# Error: COMP96_0094: cacheD.vhd : (17, 30): Locally static expression is required in the range definition.
+# Error: COMP96_0071: cacheD.vhd : (22, 42): Operator "-" is not defined for such operands.
+# Error: COMP96_0094: cacheD.vhd : (22, 31): Locally static expression is required in the range definition.
+# Error: COMP96_0071: cacheD.vhd : (23, 41): Operator "-" is not defined for such operands.
+# Error: COMP96_0094: cacheD.vhd : (23, 31): Locally static expression is required in the range definition.
+# Error: COMP96_0071: cacheD.vhd : (27, 42): Operator "-" is not defined for such operands.
+# Error: COMP96_0094: cacheD.vhd : (27, 31): Locally static expression is required in the range definition.
+# Error: COMP96_0071: cacheD.vhd : (28, 41): Operator "-" is not defined for such operands.
+# Error: COMP96_0094: cacheD.vhd : (28, 31): Locally static expression is required in the range definition.
+# Compile failure 14 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work projeto06281 -2002  $dsn/src/cacheD.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheD.vhd
+# Compile Entity "cacheD"
+# Error: COMP96_0018: cacheD.vhd : (30, 2): Identifier expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work projeto06281 -2002  $dsn/src/cacheD.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheD.vhd
+# Compile Entity "cacheD"
+# Error: COMP96_0071: cacheD.vhd : (15, 41): Operator "-" is not defined for such operands.
+# Error: COMP96_0094: cacheD.vhd : (15, 30): Locally static expression is required in the range definition.
+# Error: COMP96_0071: cacheD.vhd : (16, 38): Operator "-" is not defined for such operands.
+# Error: COMP96_0094: cacheD.vhd : (16, 28): Locally static expression is required in the range definition.
+# Error: COMP96_0071: cacheD.vhd : (17, 41): Operator "-" is not defined for such operands.
+# Error: COMP96_0094: cacheD.vhd : (17, 30): Locally static expression is required in the range definition.
+# Error: COMP96_0071: cacheD.vhd : (22, 42): Operator "-" is not defined for such operands.
+# Error: COMP96_0094: cacheD.vhd : (22, 31): Locally static expression is required in the range definition.
+# Error: COMP96_0071: cacheD.vhd : (23, 41): Operator "-" is not defined for such operands.
+# Error: COMP96_0094: cacheD.vhd : (23, 31): Locally static expression is required in the range definition.
+# Error: COMP96_0071: cacheD.vhd : (27, 42): Operator "-" is not defined for such operands.
+# Error: COMP96_0094: cacheD.vhd : (27, 31): Locally static expression is required in the range definition.
+# Error: COMP96_0071: cacheD.vhd : (28, 41): Operator "-" is not defined for such operands.
+# Error: COMP96_0094: cacheD.vhd : (28, 31): Locally static expression is required in the range definition.
+# Compile failure 14 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work projeto06281 -2002  $dsn/src/cacheD.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheD.vhd
+# Compile Entity "cacheD"
+# Error: COMP96_0071: cacheD.vhd : (15, 41): Operator "-" is not defined for such operands.
+# Error: COMP96_0094: cacheD.vhd : (15, 30): Locally static expression is required in the range definition.
+# Error: COMP96_0071: cacheD.vhd : (16, 38): Operator "-" is not defined for such operands.
+# Error: COMP96_0094: cacheD.vhd : (16, 28): Locally static expression is required in the range definition.
+# Error: COMP96_0071: cacheD.vhd : (17, 41): Operator "-" is not defined for such operands.
+# Error: COMP96_0094: cacheD.vhd : (17, 30): Locally static expression is required in the range definition.
+# Error: COMP96_0071: cacheD.vhd : (22, 42): Operator "-" is not defined for such operands.
+# Error: COMP96_0094: cacheD.vhd : (22, 31): Locally static expression is required in the range definition.
+# Error: COMP96_0071: cacheD.vhd : (23, 41): Operator "-" is not defined for such operands.
+# Error: COMP96_0094: cacheD.vhd : (23, 31): Locally static expression is required in the range definition.
+# Error: COMP96_0071: cacheD.vhd : (27, 42): Operator "-" is not defined for such operands.
+# Error: COMP96_0094: cacheD.vhd : (27, 31): Locally static expression is required in the range definition.
+# Error: COMP96_0071: cacheD.vhd : (28, 41): Operator "-" is not defined for such operands.
+# Error: COMP96_0094: cacheD.vhd : (28, 31): Locally static expression is required in the range definition.
+# Compile failure 14 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work projeto06281 -2002  $dsn/src/cacheD.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheD.vhd
+# Compile Entity "cacheD"
+# Error: COMP96_0015: cacheD.vhd : (13, 7): '(' expected.
+# Error: COMP96_0028: cacheD.vhd : (13, 7): Identifier or keyword expected.
+# Error: COMP96_0015: cacheD.vhd : (13, 7): ';' expected.
+# Error: COMP96_0019: cacheD.vhd : (13, 10): Keyword 'end' expected.
+# Error: COMP96_0015: cacheD.vhd : (13, 10): ';' expected.
+# Error: COMP96_0016: cacheD.vhd : (14, 2): Design unit declaration expected.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work projeto06281 -2002  $dsn/src/cacheD.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheD.vhd
+# Compile Entity "cacheD"
+# Error: COMP96_0071: cacheD.vhd : (15, 41): Operator "-" is not defined for such operands.
+# Error: COMP96_0094: cacheD.vhd : (15, 30): Locally static expression is required in the range definition.
+# Error: COMP96_0071: cacheD.vhd : (16, 38): Operator "-" is not defined for such operands.
+# Error: COMP96_0094: cacheD.vhd : (16, 28): Locally static expression is required in the range definition.
+# Error: COMP96_0071: cacheD.vhd : (17, 41): Operator "-" is not defined for such operands.
+# Error: COMP96_0094: cacheD.vhd : (17, 30): Locally static expression is required in the range definition.
+# Error: COMP96_0071: cacheD.vhd : (22, 42): Operator "-" is not defined for such operands.
+# Error: COMP96_0094: cacheD.vhd : (22, 31): Locally static expression is required in the range definition.
+# Error: COMP96_0071: cacheD.vhd : (23, 41): Operator "-" is not defined for such operands.
+# Error: COMP96_0094: cacheD.vhd : (23, 31): Locally static expression is required in the range definition.
+# Error: COMP96_0071: cacheD.vhd : (27, 42): Operator "-" is not defined for such operands.
+# Error: COMP96_0094: cacheD.vhd : (27, 31): Locally static expression is required in the range definition.
+# Error: COMP96_0071: cacheD.vhd : (28, 41): Operator "-" is not defined for such operands.
+# Error: COMP96_0094: cacheD.vhd : (28, 31): Locally static expression is required in the range definition.
+# Compile failure 14 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work projeto06281 -2002  $dsn/src/cacheD.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheD.vhd
+# Compile Entity "cacheD"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work projeto06281 -2002  $dsn/src/Fub2.bde
+# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\Fub2.bde'.
+# DRC: Warning: Fub2.bde - 0 error(s), 6 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\compile\Fub2.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\Fub2.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\Fub2.vhd
+# Compile Entity "blocs"
+# Compile Architecture "blocs" of Entity "blocs"
+# Error: COMP96_0207: Fub2.bde(Fub2.vhd) : (88, 1): No actual specified for local port "ender".
+# Error: COMP96_0207: Fub2.bde(Fub2.vhd) : (97, 1): No actual specified for local port "endereco_in".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work projeto06281 -2002  $dsn/src/ram.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\ram.vhd
+# Compile Entity "Ram"
+# Error: COMP96_0015: ram.vhd : (40, 8): '(' expected.
+# Error: COMP96_0028: ram.vhd : (40, 8): Identifier or keyword expected.
+# Error: COMP96_0015: ram.vhd : (40, 8): ';' expected.
+# Error: COMP96_0019: ram.vhd : (40, 11): Keyword 'end' expected.
+# Error: COMP96_0015: ram.vhd : (40, 11): ';' expected.
+# Error: COMP96_0016: ram.vhd : (41, 8): Design unit declaration expected.
+# Compile Architecture "Ram" of Entity "Ram"
+# Compile failure 6 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work projeto06281 -2002  $dsn/src/ram.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\ram.vhd
+# Compile Entity "Ram"
+# Error: COMP96_0015: ram.vhd : (40, 8): '(' expected.
+# Error: COMP96_0028: ram.vhd : (40, 8): Identifier or keyword expected.
+# Error: COMP96_0015: ram.vhd : (40, 8): ';' expected.
+# Error: COMP96_0019: ram.vhd : (40, 11): Keyword 'end' expected.
+# Error: COMP96_0015: ram.vhd : (40, 11): ';' expected.
+# Error: COMP96_0016: ram.vhd : (41, 8): Design unit declaration expected.
+# Compile Architecture "Ram" of Entity "Ram"
+# Compile failure 6 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work projeto06281 -2002  $dsn/src/ram.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\ram.vhd
+# Compile Entity "Ram"
+# Error: COMP96_0015: ram.vhd : (41, 28): ')' e

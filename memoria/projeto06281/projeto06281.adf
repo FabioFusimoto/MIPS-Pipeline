@@ -40,9 +40,16 @@ Active_lib=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=ram|ram|0  
+HierarchyInformation=ram|ram|0
 ShowHide=ShowTopLevel
 Selected=
+
+
+[file_out:/uc+hierarquia.bde]
+/..\compile\uc+hierarquia.vhd=-1
+
+[file_out:/Fub1.bde]
+/..\compile\Fub1.vhd=-1
 
 [Files]
 /readtxt.vhd=-1
@@ -61,8 +68,7 @@ Selected=
 .\src\Fub2.bde=Block Diagram
 .\src\uc+hierarquia.bde=Block Diagram
 .\src\Fub1.bde=Block Diagram
+.\compile\Fub2.vhd=VHDL Source Code
 
 [file_out:/Fub2.bde]
 /..\compile\Fub2.vhd=-1
-[file_out:/uc+hierarquia.bde]
-/..\compile\uc+hierarquia.vhd=-1

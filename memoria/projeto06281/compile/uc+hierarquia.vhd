@@ -7,9 +7,9 @@
 --
 -------------------------------------------------------------------------------
 --
--- File        : C:\My_Designs\projeto1\projeto06281\compile\uc+hierarquia.vhd
--- Generated   : Sun Jun 30 20:11:39 2019
--- From        : C:/My_Designs/projeto1/projeto06281/src/uc+hierarquia.bde
+-- File        : C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\compile\uc+hierarquia.vhd
+-- Generated   : Mon Jul  1 13:49:25 2019
+-- From        : C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\uc+hierarquia.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
 -------------------------------------------------------------------------------

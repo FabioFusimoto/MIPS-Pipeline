@@ -1,4 +1,7 @@
 WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
-MESSAGE "File: C:\My_Designs\projeto1\projeto06281\src\cacheI.vhd" 
-MESSAGE "Compile Entity "cacheI"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]" 
+MESSAGE "File: .\Fub2.vhd" 
+MESSAGE "Compile Entity "blocs"" 
+MESSAGE "Compile Architecture "blocs" of Entity "blocs"" 
+ERROR COMP96_0207: "No actual specified for local port "ender"." "C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\compile\Fub2.vhd" 88 1
+ERROR COMP96_0207: "No actual specified for local port "endereco_in"." "C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\compile\Fub2.vhd" 97 1
+FAILURE "Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]" 

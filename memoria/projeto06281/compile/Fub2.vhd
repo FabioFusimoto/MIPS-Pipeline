@@ -7,9 +7,9 @@
 --
 -------------------------------------------------------------------------------
 --
--- File        : C:\My_Designs\projeto1\projeto06281\compile\Fub2.vhd
--- Generated   : Sun Jun 30 20:12:12 2019
--- From        : C:/My_Designs/projeto1/projeto06281/src/Fub2.bde
+-- File        : C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\compile\Fub2.vhd
+-- Generated   : Mon Jul  1 13:53:30 2019
+-- From        : C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\Fub2.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
 -------------------------------------------------------------------------------
@@ -75,7 +75,7 @@ constant DANGLING_INPUT_CONSTANT : STD_LOGIC := 'Z';
 
 ---- Signal declarations used on the diagram ----
 
-signal NET41 : STD_LOGIC;
+signal q041 : STD_LOGIC;
 signal BUS30 : STD_LOGIC_VECTOR(7 downto 0);
 
 ---- Declaration for Dangling input ----
@@ -90,14 +90,14 @@ U1 : Ram
        Clock => Dangling_Input_Signal,
        dado => BUS30(7 downto 0),
        enable => Dangling_Input_Signal,
-       pronto => NET41,
+       pronto => q041,
        rw => Dangling_Input_Signal
   );
 
 U2 : cacheI
   port map(
        data => BUS30(7 downto 0),
-       doneM => NET41,
+       doneM => q041,
        reset => Dangling_Input_Signal
   );
 
