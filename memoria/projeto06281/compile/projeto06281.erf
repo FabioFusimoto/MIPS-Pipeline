@@ -1,0 +1,4 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: C:\My_Designs\projeto1\projeto06281\src\cacheI.vhd" 
+MESSAGE "Compile Entity "cacheI"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]" 

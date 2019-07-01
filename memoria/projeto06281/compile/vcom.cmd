@@ -1,0 +1,1 @@
+-w -erf C:/My_Designs/projeto1/projeto06281/compile/projeto06281.erf -d C:/My_Designs/projeto1/projeto06281/compile -s C:/My_Designs/projeto1/library.cfg -j C:/My_Designs/projeto1/projeto06281/projlib.cfg -work projeto06281 -O3 -e 100 -work projeto06281 -2002 C:/My_Designs/projeto1/projeto06281/src/cacheI.vhd 

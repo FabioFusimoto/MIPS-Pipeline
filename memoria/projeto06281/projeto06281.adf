@@ -1,0 +1,68 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=projeto06281
+
+[Library]
+projeto06281=.\projeto06281\projeto06281.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+projeto06281=.
+Active_lib=
+
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=ram|ram|0  
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/readtxt.vhd=-1
+/cacheI.vhd=-1
+/cacheD.vhd=-1
+/ram.vhd=-1
+/Fub2.bde=-1
+/uc+hierarquia.bde=-1
+/Fub1.bde=-1
+
+[Files.Data]
+.\src\readtxt.vhd=VHDL Source Code
+.\src\cacheI.vhd=VHDL Source Code
+.\src\cacheD.vhd=VHDL Source Code
+.\src\ram.vhd=VHDL Source Code
+.\src\Fub2.bde=Block Diagram
+.\src\uc+hierarquia.bde=Block Diagram
+.\src\Fub1.bde=Block Diagram
+
+[file_out:/Fub2.bde]
+/..\compile\Fub2.vhd=-1
+[file_out:/uc+hierarquia.bde]
+/..\compile\uc+hierarquia.vhd=-1

@@ -1,0 +1,7 @@
+.\src\readtxt.vhd
+.\src\cacheI.vhd
+.\src\cacheD.vhd
+.\src\ram.vhd
+.\src\Fub2.bde
+.\src\uc+hierarquia.bde
+.\src\Fub1.bde
