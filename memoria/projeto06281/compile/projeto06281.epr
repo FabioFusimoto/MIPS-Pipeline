@@ -1,2 +1,8 @@
-"C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\compile\Fub2.vhd" VHDL projeto06281 0 0 0 -02
+"C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\readtxt.vhd" VHDL projeto06281 1 0 0 -02
+"C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheI.vhd" VHDL projeto06281 1 0 0 -02
+"C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheD.vhd" VHDL projeto06281 1 0 0 -02
+"C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\ram.vhd" VHDL projeto06281 1 0 0 -02
+".\..\compile\Fub2.vhd" VHDL projeto06281 0 0 0 -02
+".\..\compile\uc+hierarquia.vhd" VHDL projeto06281 2 0 0 -02
+".\..\compile\Fub1.vhd" VHDL projeto06281 1 0 0 -02
 . . 0 0 0

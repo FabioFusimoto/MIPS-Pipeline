@@ -1,7 +1,30 @@
 WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
-MESSAGE "File: .\Fub2.vhd" 
+MESSAGE "File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\readtxt.vhd" 
+MESSAGE "Compile Entity "read_file"" 
+MESSAGE "Compile Architecture "beha" of Entity "read_file"" 
+MESSAGE "File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheI.vhd" 
+MESSAGE "Compile Entity "cacheI"" 
+MESSAGE "File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheD.vhd" 
+MESSAGE "Compile Entity "cacheD"" 
+MESSAGE "File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\ram.vhd" 
+MESSAGE "Compile Entity "Ram"" 
+MESSAGE "Compile Architecture "Ram" of Entity "Ram"" 
+MESSAGE "File: .\..\compile\Fub2.vhd" 
 MESSAGE "Compile Entity "blocs"" 
+ERROR COMP96_0078: "Unknown identifier "sta_logic"." ".\..\compile\Fub2.vhd" 30 16
+ERROR COMP96_0064: "Unknown type." ".\..\compile\Fub2.vhd" 30 16
 MESSAGE "Compile Architecture "blocs" of Entity "blocs"" 
-ERROR COMP96_0207: "No actual specified for local port "ender"." "C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\compile\Fub2.vhd" 88 1
-ERROR COMP96_0207: "No actual specified for local port "endereco_in"." "C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\compile\Fub2.vhd" 97 1
-FAILURE "Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]" 
+ERROR COMP96_0122: "Symbol "BusOutput1" has already been declared in this scope." ".\..\compile\Fub2.vhd" 91 1
+ERROR COMP96_0078: "Unknown identifier "clk"." ".\..\compile\Fub2.vhd" 99 17
+ERROR COMP96_0078: "Unknown identifier "en"." ".\..\compile\Fub2.vhd" 101 18
+ERROR COMP96_0078: "Unknown identifier "w"." ".\..\compile\Fub2.vhd" 105 13
+ERROR COMP96_0078: "Unknown identifier "reset"." ".\..\compile\Fub2.vhd" 114 17
+MESSAGE "File: .\..\compile\uc+hierarquia.vhd" 
+MESSAGE "Compile Entity "\uc+hierarquia\"" 
+MESSAGE "Compile Architecture "\uc+hierarquia\" of Entity "\uc+hierarquia\"" 
+WARNING ELAB1_0026: "There is no default binding for component "BancadaDeTeste". (No entity named "BancadaDeTeste" was found)." ".\..\compile\uc+hierarquia.vhd" 45 0
+WARNING ELAB1_0026: "There is no default binding for component "ModuloMem". (No entity named "ModuloMem" was found)." ".\..\compile\uc+hierarquia.vhd" 47 0
+MESSAGE "File: .\..\compile\Fub1.vhd" 
+MESSAGE "Compile Entity "Fub1"" 
+MESSAGE "Compile Architecture "Fub1" of Entity "Fub1"" 
+FAILURE "Compile failure 7 Errors 2 Warnings  Analysis time :  47.0 [ms]" 

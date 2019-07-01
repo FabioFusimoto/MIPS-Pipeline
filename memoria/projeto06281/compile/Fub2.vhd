@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\compile\Fub2.vhd
--- Generated   : Mon Jul  1 13:53:30 2019
+-- Generated   : Mon Jul  1 16:55:20 2019
 -- From        : C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\Fub2.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -24,10 +24,22 @@ use IEEE.std_logic_arith.all;
 use IEEE.std_logic_signed.all;
 use IEEE.std_logic_unsigned.all;
 
-entity blocs is 
+entity blocs is
+  port(
+       clk : in std_logic;
+       en : in sta_logic;
+       reset : in STD_LOGIC;
+       w : in std_logic;
+       BusInput2 : in UNSIGNED(7 downto 0)
+  );
 end blocs;
 
 architecture blocs of blocs is
+
+function aldec_usn2slv8 (val:unsigned) return std_logic_vector is
+begin
+return conv_std_logic_vector(val,8);
+end aldec_usn2slv8;
 
 ---- Component declarations -----
 
@@ -64,22 +76,19 @@ component Ram
        Clock : in STD_LOGIC;
        enable : in STD_LOGIC;
        ender : in STD_LOGIC_VECTOR(BE-1 downto 0);
-       rw : in STD_LOGIC;
+       r : in STD_LOGIC;
+       w : in STD_LOGIC;
        pronto : out STD_LOGIC;
        dado : inout STD_LOGIC_VECTOR(BP-1 downto 0)
   );
 end component;
 
-----     Constants     -----
-constant DANGLING_INPUT_CONSTANT : STD_LOGIC := 'Z';
-
 ---- Signal declarations used on the diagram ----
 
+signal q0361 : STD_LOGIC;
 signal q041 : STD_LOGIC;
 signal BUS30 : STD_LOGIC_VECTOR(7 downto 0);
-
----- Declaration for Dangling input ----
-signal Dangling_Input_Signal : STD_LOGIC;
+signal BusOutput1 : STD_LOGIC_VECTOR(7 downto 0);
 
 begin
 
@@ -87,23 +96,23 @@ begin
 
 U1 : Ram
   port map(
-       Clock => Dangling_Input_Signal,
+       Clock => clk,
        dado => BUS30(7 downto 0),
-       enable => Dangling_Input_Signal,
+       enable => en,
+       ender => BusOutput1(7 downto 0),
        pronto => q041,
-       rw => Dangling_Input_Signal
+       r => q0361,
+       w => w
   );
 
 U2 : cacheI
   port map(
+       aldec_usn2slv8(endereco_outM) => BusOutput1( 7 downto 0 ),
        data => BUS30(7 downto 0),
        doneM => q041,
-       reset => Dangling_Input_Signal
+       endereco_in => BusInput2(7 downto 0),
+       reset => reset
   );
 
-
----- Dangling input signal assignment ----
-
-Dangling_Input_Signal <= DANGLING_INPUT_CONSTANT;
 
 end blocs;

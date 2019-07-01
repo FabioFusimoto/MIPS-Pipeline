@@ -40,7 +40,8 @@ entity Ram is
   port(
        Clock : in std_logic;
        enable : in STD_LOGIC;
-       rw : in std_logic;
+       r : in std_logic;
+	   w : in std_logic;
        ender : in std_logic_vector(BE - 1 downto 0);
        pronto : out std_logic;
        dado : inout std_logic_vector(BP - 1 downto 0)
@@ -51,7 +52,8 @@ architecture Ram of Ram is
 
 ---- Architecture declarations -----
 type 	tipo_memoria  is array (0 to 2**BE - 1) of std_logic_vector(BP - 1 downto 0);
-signal Mram: tipo_memoria := ( others  => (others => '0')) ;
+signal Mram: tipo_memoria := ( others  => (others => '0')) ; 
+signal rw : std_logic_vector(1 downto 0);
 
 
 begin
@@ -108,7 +110,10 @@ function fill_memory return tipo_memoria is
 end fill_memory;
  
 begin
-if inicio = '1' then
+	rw(1) <= r;
+	rw(0) <= w;
+	
+	if inicio = '1' then
 	-- Roda somente uma vez na inicialização
 	Mram <= fill_memory;
 	-- Insere o conteúdo na memória
@@ -120,12 +125,14 @@ if enable = '1' then
 	else
 		endereco := conv_integer(ender);
 		case rw is
-			when '0' => -- Ciclo de Leitura
+			when "10" | "11" => -- Ciclo de Leitura
 				dado <= Mram(endereco) after Tread;
 				pronto <= '1' after Tread;				 
-			when '1' => --Ciclo de Escrita
+			when "01" => --Ciclo de Escrita
 				Mram(endereco) <= dado after Twrite;
 				pronto <= '1' after Twrite;
+			when "00" => -- Ciclo de Espera
+				pronto <= '0';
 			when others => -- Ciclo inválido
 				Null;
 		end case;

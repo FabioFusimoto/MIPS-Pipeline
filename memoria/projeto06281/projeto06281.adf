@@ -45,11 +45,7 @@ ShowHide=ShowTopLevel
 Selected=
 
 
-[file_out:/uc+hierarquia.bde]
-/..\compile\uc+hierarquia.vhd=-1
 
-[file_out:/Fub1.bde]
-/..\compile\Fub1.vhd=-1
 
 [Files]
 /readtxt.vhd=-1
@@ -69,6 +65,12 @@ Selected=
 .\src\uc+hierarquia.bde=Block Diagram
 .\src\Fub1.bde=Block Diagram
 .\compile\Fub2.vhd=VHDL Source Code
+.\compile\uc+hierarquia.vhd=VHDL Source Code
+.\compile\Fub1.vhd=VHDL Source Code
 
 [file_out:/Fub2.bde]
 /..\compile\Fub2.vhd=-1
+[file_out:/Fub1.bde]
+/..\compile\Fub1.vhd=-1
+[file_out:/uc+hierarquia.bde]
+/..\compile\uc+hierarquia.vhd=-1
