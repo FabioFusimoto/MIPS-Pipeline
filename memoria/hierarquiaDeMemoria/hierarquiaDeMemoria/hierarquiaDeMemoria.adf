@@ -40,15 +40,39 @@ Active_lib=
 /RAM.vhd=-1
 /TB_RAM.bde=-1
 /testeRAM.bde=-1
+/CacheI.vhd=-1
+/TB_CacheI.bde=-1
+/CacheIeRAM.bde=-1
+/testeCacheI.bde=-1
+/CacheIleram.awc=-1
 
 [Files.Data]
 .\src\RAM.vhd=VHDL Source Code
 .\src\TB_RAM.bde=Block Diagram
 .\src\testeRAM.bde=Block Diagram
+.\src\CacheI.vhd=VHDL Source Code
+.\src\TB_CacheI.bde=Block Diagram
+.\src\CacheIeRAM.bde=Block Diagram
+.\src\testeCacheI.bde=Block Diagram
+.\src\CacheIleram.awc=Accelerated Waveform Configuration
 .\compile\TB_RAM.vhd=VHDL Source Code
 .\compile\testeRAM.vhd=VHDL Source Code
+.\compile\TB_CacheI.vhd=VHDL Source Code
+.\compile\CacheIeRAM.vhd=VHDL Source Code
+.\compile\testeCacheI.vhd=VHDL Source Code
+
+
+
+
+
 
 [file_out:/TB_RAM.bde]
 /..\compile\TB_RAM.vhd=-1
 [file_out:/testeRAM.bde]
 /..\compile\testeRAM.vhd=-1
+[file_out:/TB_CacheI.bde]
+/..\compile\TB_CacheI.vhd=-1
+[file_out:/CacheIeRAM.bde]
+/..\compile\CacheIeRAM.vhd=-1
+[file_out:/testeCacheI.bde]
+/..\compile\testeCacheI.vhd=-1

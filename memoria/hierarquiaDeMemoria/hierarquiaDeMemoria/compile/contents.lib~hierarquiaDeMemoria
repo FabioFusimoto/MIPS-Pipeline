@@ -1,7 +1,18 @@
-130
+533
+~E 1 "./../src/CacheI.vhd" 5 CacheI
+~A 1 "./../src/CacheI.vhd" 25 comportamental
+~E 1 "./../compile/CacheIeRAM.vhd" 27 CacheIeRAM
+~A 1 "./../compile/CacheIeRAM.vhd" 37 CacheIeRAM
+~E 1 "./../compile/CacheIeRAM.vhd" 27 Fub2
+~A 1 "./../compile/CacheIeRAM.vhd" 37 CacheIeRAM
+~E 0 "" 0 Fub4
 ~E 1 "./../src/RAM.vhd" 30 Ram
 ~A 1 "./../src/RAM.vhd" 51 Ram
+~E 1 "./../compile/TB_CacheI.vhd" 27 TB_CacheI
+~A 1 "./../compile/TB_CacheI.vhd" 37 TB_CacheI
 ~E 1 "./../compile/TB_RAM.vhd" 27 TB_RAM
 ~A 1 "./../compile/TB_RAM.vhd" 39 TB_RAM
+~E 1 "./../compile/testeCacheI.vhd" 27 testeCacheI
+~A 1 "./../compile/testeCacheI.vhd" 30 testeCacheI
 ~E 1 "./../compile/testeRAM.vhd" 27 testeRAM
 ~A 1 "./../compile/testeRAM.vhd" 30 testeRAM

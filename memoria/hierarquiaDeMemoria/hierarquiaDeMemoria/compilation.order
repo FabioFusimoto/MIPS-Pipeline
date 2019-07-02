@@ -1,3 +1,7 @@
 .\src\RAM.vhd
 .\src\TB_RAM.bde
 .\src\testeRAM.bde
+.\src\CacheI.vhd
+.\src\TB_CacheI.bde
+.\src\CacheIeRAM.bde
+.\src\testeCacheI.bde

@@ -1,3 +1,8 @@
 i<>.\src\RAM.vhd
 i<>.\src\TB_RAM.bde
 i<>.\src\testeRAM.bde
+i<>.\src\CacheI.vhd
+i<>.\src\TB_CacheI.bde
+i<>.\src\CacheIeRAM.bde
+i<>.\src\CacheIeRam.bde
+i<>.\src\testeCacheI.bde

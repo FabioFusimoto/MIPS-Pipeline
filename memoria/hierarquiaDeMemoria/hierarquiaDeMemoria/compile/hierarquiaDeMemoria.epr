@@ -1,4 +1,8 @@
-"c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd" VHDL hierarquiaDeMemoria 1 0 0 -02
+"C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd" VHDL hierarquiaDeMemoria 1 0 0 -02
 ".\..\compile\TB_RAM.vhd" VHDL hierarquiaDeMemoria 1 0 0 -02
 ".\..\compile\testeRAM.vhd" VHDL hierarquiaDeMemoria 1 0 0 -02
+"C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd" VHDL hierarquiaDeMemoria 1 0 0 -02
+".\..\compile\TB_CacheI.vhd" VHDL hierarquiaDeMemoria 1 0 0 -02
+".\..\compile\CacheIeRAM.vhd" VHDL hierarquiaDeMemoria 1 0 0 -02
+".\..\compile\testeCacheI.vhd" VHDL hierarquiaDeMemoria 1 0 0 -02
 . . 0 0 0

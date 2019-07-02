@@ -36,6 +36,27 @@ CompileWithDebug=0
 hierarquia=.
 Active_lib=
 
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=testeram|testeRAM|0 
+ShowHide=ShowTopLevel
+Selected=
+
+
+[file_out:/testeCacheI.bde]
+/..\compile\testeCacheI.vhd=-1
+
+[file_out:/TB_CacheI2.bde]
+/..\compile\TB_CacheI2.vhd=-1
+
+[file_out:/TB_RAM.bde]
+/..\compile\TB_RAM.vhd=-1
+
+[file_out:/testeRAM.bde]
+/..\compile\testeRAM.vhd=-1
+
 [Files]
 /ram.vhd=-1
 /Fub1.bde=-1
@@ -53,30 +74,6 @@ Active_lib=
 .\src\TB_CacheI2.bde=Block Diagram
 .\src\TB_RAM.bde=Block Diagram
 .\src\testeRAM.bde=Block Diagram
-.\compile\Fub1.vhd=VHDL Source Code
-.\compile\testeCacheI.vhd=VHDL Source Code
-.\compile\TB_CacheI2.vhd=VHDL Source Code
-.\compile\TB_RAM.vhd=VHDL Source Code
-.\compile\testeRAM.vhd=VHDL Source Code
 
-
-
-
-
-
-[SpecTracer]
-WindowVisible=0
-[HierarchyViewer]
-HierarchyInformation= 
-ShowHide=ShowTopLevel
-Selected=
 [file_out:/Fub1.bde]
 /..\compile\Fub1.vhd=-1
-[file_out:/testeCacheI.bde]
-/..\compile\testeCacheI.vhd=-1
-[file_out:/TB_CacheI2.bde]
-/..\compile\TB_CacheI2.vhd=-1
-[file_out:/TB_RAM.bde]
-/..\compile\TB_RAM.vhd=-1
-[file_out:/testeRAM.bde]
-/..\compile\testeRAM.vhd=-1

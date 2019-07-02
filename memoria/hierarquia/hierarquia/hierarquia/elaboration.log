@@ -1,4 +1,4 @@
-Active-HDL 10.5.217.6767 2019-07-02 12:02:30
+Active-HDL 10.5.217.6767 2019-07-02 17:33:56
 
 Elaboration top modules:
 Architecture                  testeRAM(testeRAM)
@@ -31,9 +31,3 @@ hierarquia              | None
 ieee                    | Standard IEEE packages library
 std                     | Standard VHDL library
 --------------------------------------------------------------------------------------------
-
-
-Simulation Options: asim -O5 +access +r +m+testeRAM testeRAM testeRAM
-
-
-The performance of simulation is reduced. Version Student Edition

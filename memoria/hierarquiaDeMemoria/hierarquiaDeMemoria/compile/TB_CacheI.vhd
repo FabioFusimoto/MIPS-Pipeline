@@ -7,9 +7,9 @@
 --
 -------------------------------------------------------------------------------
 --
--- File        : C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\TB_RAM.vhd
--- Generated   : Tue Jul  2 17:33:15 2019
--- From        : C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_RAM.bde
+-- File        : C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\TB_CacheI.vhd
+-- Generated   : Tue Jul  2 19:02:30 2019
+-- From        : C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_CacheI.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
 -------------------------------------------------------------------------------
@@ -24,39 +24,35 @@ use IEEE.std_logic_arith.all;
 use IEEE.std_logic_signed.all;
 use IEEE.std_logic_unsigned.all;
 
-entity TB_RAM is
+entity TB_CacheI is
   port(
-       pronto : in STD_LOGIC;
-       dadoOut : in STD_LOGIC_VECTOR(15 downto 0);
+       data_out : in STD_LOGIC_VECTOR(15 downto 0);
        Clock : out STD_LOGIC;
        enable : out STD_LOGIC;
-       r : out STD_LOGIC;
        w : out STD_LOGIC;
-       enderecoIn : out STD_LOGIC_VECTOR(7 downto 0)
+       endereco_in : out STD_LOGIC_VECTOR(7 downto 0)
   );
-end TB_RAM;
+end TB_CacheI;
 
-architecture TB_RAM of TB_RAM is
+architecture TB_CacheI of TB_CacheI is
 
 begin
 
 ---- Processes ----
 
 Estimulos :
-process (dadoOut, pronto)
+process (data_out)
 -- Section above this comment may be overwritten according to
 -- "Update sensitivity list automatically" option status
 -- declarations
 begin
 -- statements	
 	enable <= '1';
-	r <= '1';
-	w <= '0';
-	enderecoIn <= x"0F"; 
-	--wait for 10 ns;
+	w <= '0';	  
+	endereco_in <= x"00"; 
+
 	
 end process Estimulos;
-
 
 clk :
 	 process
@@ -69,5 +65,4 @@ clk :
 end process clk;
 
 
-
-end TB_RAM;
+end TB_CacheI;
