@@ -1,0 +1,294 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: Architecture 'Ram' of entity 'Ram' not found in library 'projeto06281'.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# Library Manager: Library "biblioteca_de_componentes" attached.
+# AMAP: Adding mapping library O.K.
+# Remove mapping biblioteca_de_componentes C:\aldec\active-hdl-student-edition\vlib\biblioteca_de_componentesv4.5\biblioteca_de_componentes.lib
+# Warning: Library Manager: Local library "biblioteca_de_componentes" detached.
+acom -O3 -e 100 -work projeto06281 -2002  $dsn/src/readtxt.vhd $dsn/src/cacheI.vhd $dsn/src/cacheD.vhd $dsn/src/ram.vhd $dsn/src/Fub2.bde $dsn/src/uc+hierarquia.bde $dsn/src/Fub1.bde
+# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\Fub2.bde'.
+# DRC: Warning: Fub2.bde - 0 error(s), 6 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\compile\Fub2.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\Fub2.bde ...
+# Generation successful
+# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\uc+hierarquia.bde'.
+# DRC: Warning: uc+hierarquia.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\compile\uc+hierarquia.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\uc+hierarquia.bde ...
+# Generation successful
+# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\Fub1.bde'.
+# DRC: Fub1.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\compile\Fub1.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\Fub1.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\readtxt.vhd
+# Compile Entity "read_file"
+# Compile Architecture "beha" of Entity "read_file"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheI.vhd
+# Compile Entity "cacheI"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheD.vhd
+# Compile Entity "cacheD"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\ram.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\Fub2.vhd
+# Compile Entity "blocs"
+# Compile Architecture "blocs" of Entity "blocs"
+# Error: COMP96_0207: Fub2.bde(Fub2.vhd) : (88, 1): No actual specified for local port "ender".
+# Error: COMP96_0207: Fub2.bde(Fub2.vhd) : (97, 1): No actual specified for local port "endereco_in".
+# File: .\..\compile\uc+hierarquia.vhd
+# Compile Entity "\uc+hierarquia\"
+# Compile Architecture "\uc+hierarquia\" of Entity "\uc+hierarquia\"
+# Warning: ELAB1_0026: uc+hierarquia.bde(uc+hierarquia.vhd) : (47, 0): There is no default binding for component "Fub2". (No entity named "Fub2" was found).
+# File: .\..\compile\Fub1.vhd
+# Compile Entity "Fub1"
+# Compile Architecture "Fub1" of Entity "Fub1"
+# Compile failure 2 Errors 1 Warnings  Analysis time :  94.0 [ms]
+acom -O3 -e 100 -work projeto06281 -2002  $dsn/compile/Fub2.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\Fub2.vhd
+# Compile Entity "blocs"
+# Compile Architecture "blocs" of Entity "blocs"
+# Error: COMP96_0207: Fub2.bde(Fub2.vhd) : (88, 1): No actual specified for local port "ender".
+# Error: COMP96_0207: Fub2.bde(Fub2.vhd) : (97, 1): No actual specified for local port "endereco_in".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work projeto06281 -2002  $dsn/src/readtxt.vhd $dsn/src/cacheI.vhd $dsn/src/cacheD.vhd $dsn/src/ram.vhd $dsn/src/Fub2.bde $dsn/src/uc+hierarquia.bde $dsn/src/Fub1.bde
+# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\Fub2.bde'.
+# DRC: Warning: Fub2.bde - 0 error(s), 6 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\compile\Fub2.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\Fub2.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\readtxt.vhd
+# Compile Entity "read_file"
+# Compile Architecture "beha" of Entity "read_file"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheI.vhd
+# Compile Entity "cacheI"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheD.vhd
+# Compile Entity "cacheD"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\ram.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# Error: COMP96_0015: ram.vhd : (113, 5): ']' expected.
+# Error: COMP96_0015: ram.vhd : (113, 4): '<=' expected.
+# Error: COMP96_0015: ram.vhd : (114, 5): ']' expected.
+# Error: COMP96_0015: ram.vhd : (114, 4): '<=' expected.
+# Error: COMP96_0019: ram.vhd : (128, 9): Keyword 'others' expected.
+# Error: COMP96_0019: ram.vhd : (131, 9): Keyword 'others' expected.
+# Error: COMP96_0019: ram.vhd : (134, 9): Keyword 'others' expected.
+# File: .\..\compile\Fub2.vhd
+# Compile Entity "blocs"
+# Compile Architecture "blocs" of Entity "blocs"
+# Warning: ELAB1_0026: Fub2.bde(Fub2.vhd) : (88, 0): There is no default binding for component "Ram". (Port "rw" is not on the entity).
+# Error: COMP96_0207: Fub2.bde(Fub2.vhd) : (88, 1): No actual specified for local port "ender".
+# Error: COMP96_0207: Fub2.bde(Fub2.vhd) : (97, 1): No actual specified for local port "endereco_in".
+# File: .\..\compile\uc+hierarquia.vhd
+# Compile Entity "\uc+hierarquia\"
+# Compile Architecture "\uc+hierarquia\" of Entity "\uc+hierarquia\"
+# Warning: ELAB1_0026: uc+hierarquia.bde(uc+hierarquia.vhd) : (47, 0): There is no default binding for component "Fub2". (No entity named "Fub2" was found).
+# File: .\..\compile\Fub1.vhd
+# Compile Entity "Fub1"
+# Compile Architecture "Fub1" of Entity "Fub1"
+# Compile failure 9 Errors 2 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -e 100 -work projeto06281 -2002  $dsn/src/readtxt.vhd $dsn/src/cacheI.vhd $dsn/src/cacheD.vhd $dsn/src/ram.vhd $dsn/src/Fub2.bde $dsn/src/uc+hierarquia.bde $dsn/src/Fub1.bde
+# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\Fub2.bde'.
+# DRC: Warning: Fub2.bde - 0 error(s), 7 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\compile\Fub2.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\Fub2.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\readtxt.vhd
+# Compile Entity "read_file"
+# Compile Architecture "beha" of Entity "read_file"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheI.vhd
+# Compile Entity "cacheI"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheD.vhd
+# Compile Entity "cacheD"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\ram.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# Error: COMP96_0015: ram.vhd : (113, 5): ']' expected.
+# Error: COMP96_0015: ram.vhd : (113, 4): '<=' expected.
+# Error: COMP96_0015: ram.vhd : (114, 5): ']' expected.
+# Error: COMP96_0015: ram.vhd : (114, 4): '<=' expected.
+# Error: COMP96_0019: ram.vhd : (128, 9): Keyword 'others' expected.
+# Error: COMP96_0019: ram.vhd : (131, 9): Keyword 'others' expected.
+# Error: COMP96_0019: ram.vhd : (134, 9): Keyword 'others' expected.
+# File: .\..\compile\Fub2.vhd
+# Compile Entity "blocs"
+# Compile Architecture "blocs" of Entity "blocs"
+# Warning: ELAB1_0026: Fub2.bde(Fub2.vhd) : (92, 0): There is no default binding for component "Ram". (Port "rw" is not on the entity).
+# File: .\..\compile\uc+hierarquia.vhd
+# Compile Entity "\uc+hierarquia\"
+# Compile Architecture "\uc+hierarquia\" of Entity "\uc+hierarquia\"
+# Warning: ELAB1_0026: uc+hierarquia.bde(uc+hierarquia.vhd) : (47, 0): There is no default binding for component "Fub2". (No entity named "Fub2" was found).
+# File: .\..\compile\Fub1.vhd
+# Compile Entity "Fub1"
+# Compile Architecture "Fub1" of Entity "Fub1"
+# Compile failure 7 Errors 2 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work projeto06281 -2002  $dsn/src/readtxt.vhd $dsn/src/cacheI.vhd $dsn/src/cacheD.vhd $dsn/src/ram.vhd $dsn/src/Fub2.bde $dsn/src/uc+hierarquia.bde $dsn/src/Fub1.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\readtxt.vhd
+# Compile Entity "read_file"
+# Compile Architecture "beha" of Entity "read_file"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheI.vhd
+# Compile Entity "cacheI"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheD.vhd
+# Compile Entity "cacheD"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\ram.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# Error: COMP96_0019: ram.vhd : (128, 9): Keyword 'others' expected.
+# Error: COMP96_0019: ram.vhd : (131, 9): Keyword 'others' expected.
+# Error: COMP96_0019: ram.vhd : (134, 9): Keyword 'others' expected.
+# File: .\..\compile\Fub2.vhd
+# Compile Entity "blocs"
+# Compile Architecture "blocs" of Entity "blocs"
+# Warning: ELAB1_0026: Fub2.bde(Fub2.vhd) : (92, 0): There is no default binding for component "Ram". (Port "rw" is not on the entity).
+# File: .\..\compile\uc+hierarquia.vhd
+# Compile Entity "\uc+hierarquia\"
+# Compile Architecture "\uc+hierarquia\" of Entity "\uc+hierarquia\"
+# Warning: ELAB1_0026: uc+hierarquia.bde(uc+hierarquia.vhd) : (47, 0): There is no default binding for component "Fub2". (No entity named "Fub2" was found).
+# File: .\..\compile\Fub1.vhd
+# Compile Entity "Fub1"
+# Compile Architecture "Fub1" of Entity "Fub1"
+# Compile failure 3 Errors 2 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -e 100 -work projeto06281 -2002  $dsn/src/ram.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\ram.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# Error: COMP96_0019: ram.vhd : (131, 9): Keyword 'others' expected.
+# Error: COMP96_0019: ram.vhd : (134, 9): Keyword 'others' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work projeto06281 -2002  $dsn/src/readtxt.vhd $dsn/src/cacheI.vhd $dsn/src/cacheD.vhd $dsn/src/ram.vhd $dsn/src/Fub2.bde $dsn/src/uc+hierarquia.bde $dsn/src/Fub1.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\readtxt.vhd
+# Compile Entity "read_file"
+# Compile Architecture "beha" of Entity "read_file"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheI.vhd
+# Compile Entity "cacheI"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheD.vhd
+# Compile Entity "cacheD"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\ram.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\Fub2.vhd
+# Compile Entity "blocs"
+# Compile Architecture "blocs" of Entity "blocs"
+# Warning: ELAB1_0026: Fub2.bde(Fub2.vhd) : (92, 0): There is no default binding for component "Ram". (Port "rw" is not on the entity).
+# File: .\..\compile\uc+hierarquia.vhd
+# Compile Entity "\uc+hierarquia\"
+# Compile Architecture "\uc+hierarquia\" of Entity "\uc+hierarquia\"
+# Warning: ELAB1_0026: uc+hierarquia.bde(uc+hierarquia.vhd) : (47, 0): There is no default binding for component "Fub2". (No entity named "Fub2" was found).
+# File: .\..\compile\Fub1.vhd
+# Compile Entity "Fub1"
+# Compile Architecture "Fub1" of Entity "Fub1"
+# Compile success 0 Errors 2 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work projeto06281 -2002  $dsn/src/ram.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\ram.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# Error: COMP96_0031: ram.vhd : (128, 9): Simple expression expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work projeto06281 -2002  $dsn/src/ram.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\ram.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# Error: COMP96_0303: ram.vhd : (131, 9): Each choice in a case statement can be represented only once.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work projeto06281 -2002  $dsn/src/ram.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\ram.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work projeto06281 -2002  $dsn/src/readtxt.vhd $dsn/src/cacheI.vhd $dsn/src/cacheD.vhd $dsn/src/ram.vhd $dsn/src/Fub2.bde $dsn/src/uc+hierarquia.bde $dsn/src/Fub1.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\readtxt.vhd
+# Compile Entity "read_file"
+# Compile Architecture "beha" of Entity "read_file"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheI.vhd
+# Compile Entity "cacheI"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheD.vhd
+# Compile Entity "cacheD"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\ram.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\Fub2.vhd
+# Compile Entity "blocs"
+# Compile Architecture "blocs" of Entity "blocs"
+# Warning: ELAB1_0026: Fub2.bde(Fub2.vhd) : (92, 0): There is no default binding for component "Ram". (Port "rw" is not on the entity).
+# File: .\..\compile\uc+hierarquia.vhd
+# Compile Entity "\uc+hierarquia\"
+# Compile Architecture "\uc+hierarquia\" of Entity "\uc+hierarquia\"
+# Warning: ELAB1_0026: uc+hierarquia.bde(uc+hierarquia.vhd) : (47, 0): There is no default binding for component "Fub2". (No entity named "Fub2" was found).
+# File: .\..\compile\Fub1.vhd
+# Compile Entity "Fub1"
+# Compile Architecture "Fub1" of Entity "Fub1"
+# Compile success 0 Errors 2 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -e 100 -work projeto06281 -2002  $dsn/src/readtxt.vhd $dsn/src/cacheI.vhd $dsn/src/cacheD.vhd $dsn/src/ram.vhd $dsn/src/Fub2.bde $dsn/src/uc+hierarquia.bde $dsn/src/Fub1.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\readtxt.vhd
+# Compile Entity "read_file"
+# Compile Architecture "beha" of Entity "read_file"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheI.vhd
+# Compile Entity "cacheI"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheD.vhd
+# Compile Entity "cacheD"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\ram.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\Fub2.vhd
+# Compile Entity "blocs"
+# Compile Architecture "blocs" of Entity "blocs"
+# Warning: ELAB1_0026: Fub2.bde(Fub2.vhd) : (92, 0): There is no default binding for component "Ram". (Port "rw" is not on the entity).
+# File: .\..\compile\uc+hierarquia.vhd
+# Compile Entity "\uc+hierarquia\"
+# Compile Architecture "\uc+hierarquia\" of Entity "\uc+hierarquia\"
+# Warning: ELAB1_0026: uc+hierarquia.bde(uc+hierarquia.vhd) : (47, 0): There is no default binding for component "Fub2". (No entity named "Fub2" was found).
+# File: .\..\compile\Fub1.vhd
+# Compile Entity "Fub1"
+# Compile Architecture "Fub1" of Entity "Fub1"
+# Compile success 0 Errors 2 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work projeto06281 -2002  $dsn/src/readtxt.vhd $dsn/src/cacheI.vhd $dsn/src/cacheD.vhd $dsn/src/ram.vhd $dsn/src/Fub2.bde $dsn/src/uc+hierarquia.bde $dsn/src/Fub1.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\readtxt.vhd
+# Compile Entity "read_file"
+# Compile Architecture "beha" of Entity "read_file"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheI.vhd
+# Compile Entity "cacheI"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\cacheD.vhd
+# Compile Entity "cacheD"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\ram.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\Fub2.vhd
+# Compile Entity "blocs"
+# Compile Architecture "blocs" of Entity "blocs"
+# Warning: ELAB1_0026: Fub2.bde(Fub2.vhd) : (92, 0): There is no default binding for component "Ram". (Port "rw" is not on the entity).
+# File: .\..\compile\uc+hierarquia.vhd
+# Compile Entity "\uc+hierarquia\"
+# Compile Architecture "\uc+hierarquia\" of Entity "\uc+hierarquia\"
+# Warning: ELAB1_0026: uc+hierarquia.bde(uc+hierarquia.vhd) : (47, 0): There is no default binding for component "Fub2". (No entity named "Fub2" was found).
+# File: .\..\compile\Fub1.vhd
+# Compile Entity "Fub1"
+# Compile Architecture "Fub1" of Entity "Fub1"
+# Compile success 0 Errors 2 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work projeto06281 -2002  $dsn/src/readtxt.vhd $dsn/src/cacheI.vhd $dsn/src/cacheD.vhd $dsn/src/ram.vhd $dsn/src/Fub2.bde $dsn/src/uc+hierarquia.bde $dsn/src/Fub1.bde
+# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\Fub2.bde'.
+# DRC: Warning: Fub2.bde - 0 error(s), 8 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\compile\Fub2.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\projeto06281\src\Fub2.bde ...
+# Conversion functions added: 1
+# Generation succes

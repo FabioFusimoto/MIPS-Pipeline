@@ -1,0 +1,82 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=hierarquia
+
+[Library]
+hierarquia=.\hierarquia\hierarquia.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+hierarquia=.
+Active_lib=
+
+[Files]
+/ram.vhd=-1
+/Fub1.bde=-1
+/testeCacheI.bde=-1
+/cacheI2.vhd=-1
+/TB_CacheI2.bde=-1
+/TB_RAM.bde=-1
+/testeRAM.bde=-1
+
+[Files.Data]
+.\src\ram.vhd=VHDL Source Code
+.\src\Fub1.bde=Block Diagram
+.\src\testeCacheI.bde=Block Diagram
+.\src\cacheI2.vhd=VHDL Source Code
+.\src\TB_CacheI2.bde=Block Diagram
+.\src\TB_RAM.bde=Block Diagram
+.\src\testeRAM.bde=Block Diagram
+.\compile\Fub1.vhd=VHDL Source Code
+.\compile\testeCacheI.vhd=VHDL Source Code
+.\compile\TB_CacheI2.vhd=VHDL Source Code
+.\compile\TB_RAM.vhd=VHDL Source Code
+.\compile\testeRAM.vhd=VHDL Source Code
+
+
+
+
+
+
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation= 
+ShowHide=ShowTopLevel
+Selected=
+[file_out:/Fub1.bde]
+/..\compile\Fub1.vhd=-1
+[file_out:/testeCacheI.bde]
+/..\compile\testeCacheI.vhd=-1
+[file_out:/TB_CacheI2.bde]
+/..\compile\TB_CacheI2.vhd=-1
+[file_out:/TB_RAM.bde]
+/..\compile\TB_RAM.vhd=-1
+[file_out:/testeRAM.bde]
+/..\compile\testeRAM.vhd=-1

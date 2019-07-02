@@ -1,0 +1,15 @@
+90
+~E 1 "./../compile/uc+hierarquia.vhd" 27 \uc+hierarquia\
+~A 1 "./../compile/uc+hierarquia.vhd" 30 \uc+hierarquia\
+~E 0 "" 0 BancadaDeTeste
+~E 1 "./../compile/Fub2.vhd" 27 blocs
+~A 1 "./../compile/Fub2.vhd" 40 blocs
+~E 1 "./../src/cacheD.vhd" 5 cacheD
+~E 1 "./../src/cacheI.vhd" 5 cacheI
+~E 1 "./../compile/Fub1.vhd" 27 Fub1
+~A 1 "./../compile/Fub1.vhd" 30 Fub1
+~E 0 "" 0 ModuloMem
+~E 1 "./../src/ram.vhd" 30 Ram
+~A 1 "./../src/ram.vhd" 51 Ram
+~E 1 "./../src/readtxt.vhd" 5 read_file
+~A 1 "./../src/readtxt.vhd" 8 beha

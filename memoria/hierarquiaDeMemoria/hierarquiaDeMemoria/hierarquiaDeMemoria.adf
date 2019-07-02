@@ -1,0 +1,54 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=hierarquiaDeMemoria
+
+[Library]
+hierarquiaDeMemoria=.\hierarquiaDeMemoria\hierarquiaDeMemoria.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+hierarquiaDeMemoria=.
+Active_lib=
+
+[Files]
+/RAM.vhd=-1
+/TB_RAM.bde=-1
+/testeRAM.bde=-1
+
+[Files.Data]
+.\src\RAM.vhd=VHDL Source Code
+.\src\TB_RAM.bde=Block Diagram
+.\src\testeRAM.bde=Block Diagram
+.\compile\TB_RAM.vhd=VHDL Source Code
+.\compile\testeRAM.vhd=VHDL Source Code
+
+[file_out:/TB_RAM.bde]
+/..\compile\TB_RAM.vhd=-1
+[file_out:/testeRAM.bde]
+/..\compile\testeRAM.vhd=-1
