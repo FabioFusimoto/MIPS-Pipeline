@@ -6,28 +6,21 @@
     </comment>
     <databases>
         <database id="">*virtual*</database>
-        <database id="1cb72cdcf5f1fa561b5d59b4ac450400">WV_IF_Teste_1.asdb</database>
+        <database id="1cb72cdcf5f11f611b5da656d4450800">WV_ID_Teste_4.asdb</database>
     </databases>
     <signallists>
         <signallist id="0">
-        <signal>/TB_IF/Reset</signal>
-        <signal>/TB_IF/dut/U1/CLK</signal>
-        <signal>/TB_IF/jump</signal>
-        <signal>/TB_IF/Excecao</signal>
-        <signal>/TB_IF/miss_cache_D</signal>
-        <signal>/TB_IF/hazard_dados</signal>
-        <signal>/TB_IF/dut/IF_Flush</signal>
-        <signal>/TB_IF/IF_ID_out</signal>
-        <signal>/TB_IF/dut/U5/PC_en</signal>
-        <signal>/TB_IF/dut/U1/PC_Out</signal>
-        <signal>/TB_IF/dut/U6/instrucao</signal>
-        <signal>/TB_IF/dut/U3/PC_mais_4</signal>
+        <signal>/TB_ID/dut/U1/Rs</signal>
+        <signal>/TB_ID/dut/U1/Rt</signal>
+        <signal>/TB_ID/dut/U1/ID_EX_Rt</signal>
+        <signal>/TB_ID/dut/U1/ID_EX_LeMem</signal>
+        <signal>/TB_ID/dut/U1/hazard_signal</signal>
         </signallist>
     </signallists>
     <prefbases>
         <prefbase id="0" >
-            <pref name="End Time" value="109802" />
-            <pref name="Start Time" value="49876" />
+            <pref name="End Time" value="29963" />
+            <pref name="Start Time" value="0" />
         </prefbase>
     </prefbases>
     <bookmarkbases>
@@ -36,7 +29,7 @@
     </bookmarkbases>
     <cursorbases>
         <cursors id="0">
-            <cursor value="90000" label="Cursor 1" locked="0" />
+            <cursor value="10000" label="Cursor 1" locked="0" />
         </cursors>
     </cursorbases>
     <measurementbases>

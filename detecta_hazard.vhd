@@ -31,6 +31,7 @@ entity detecta_hazard is
 		 Rt : in STD_LOGIC_VECTOR(4 downto 0);
 		 ID_EX_Rt : in STD_LOGIC_VECTOR(4 downto 0);
 		 ID_EX_LeMem : in STD_LOGIC_VECTOR(5 downto 0);
+		 opcode : in std_logic_vector(5 downto 0);
 		 hazard_signal : out STD_LOGIC
 	     );
 end detecta_hazard;
@@ -40,12 +41,16 @@ end detecta_hazard;
 architecture detecta_hazard of detecta_hazard is
 begin
 	-- enter your statements here --
-	process(Rs,Rt,ID_EX_Rt,ID_EX_LeMem)
-	begin
-		if(ID_EX_LeMem = "100011" and ((ID_EX_Rt = Rs) or (ID_EX_Rt = Rt))) then
-			hazard_signal <= '1';
+	process(Rs,Rt,ID_EX_Rt,ID_EX_LeMem,opcode)
+	begin 
+		if (opcode = "000000" or opcode = "100011" or opcode = "101011" or opcode = "001000" or opcode = "000100" or opcode = "001010") then
+			if(ID_EX_LeMem = "100011" and ((ID_EX_Rt = Rs) or (ID_EX_Rt = Rt))) then
+				hazard_signal <= '1';
+			else
+				hazard_signal <= '0';
+			end if;
 		else
 			hazard_signal <= '0';
-		end if;
+		end if;		
 	end process;
 end detecta_hazard;

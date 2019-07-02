@@ -1,0 +1,59 @@
+<config>
+    <version>
+        2.1
+    </version>
+    <comment>
+    </comment>
+    <databases>
+        <database id="">*virtual*</database>
+        <database id="1cb72cdcf5f1b3711b5de81515461b00">WV_ID_Teste_5.asdb</database>
+    </databases>
+    <signallists>
+        <signallist id="0">
+        <signal>/TB_ID/CLK</signal>
+        <signal>/TB_ID/dut/U1/Rs</signal>
+        <signal>/TB_ID/dut/U1/Rt</signal>
+        <signal>/TB_ID/dut/U1/ID_EX_Rt</signal>
+        <signal>/TB_ID/dut/U1/ID_EX_LeMem</signal>
+        <signal>/TB_ID/dut/U1/hazard_signal</signal>
+        <signal>/TB_ID/Overflow</signal>
+        <signal>/TB_ID/dut/U6/RegDst</signal>
+        <signal>/TB_ID/dut/U6/OrigUla</signal>
+        <signal>/TB_ID/dut/U6/OpUla</signal>
+        <signal>/TB_ID/dut/U6/cont_EX</signal>
+        <signal>/TB_ID/dut/U6/Desvio</signal>
+        <signal>/TB_ID/dut/U6/Salto</signal>
+        <signal>/TB_ID/dut/U6/LeMem</signal>
+        <signal>/TB_ID/dut/U6/EscreveMem</signal>
+        <signal>/TB_ID/dut/U6/cont_MEM</signal>
+        <signal>/TB_ID/dut/U6/EscreveReg</signal>
+        <signal>/TB_ID/dut/U6/MemParaReg</signal>
+        <signal>/TB_ID/dut/U6/Link</signal>
+        <signal>/TB_ID/dut/U6/cont_WB</signal>
+        </signallist>
+    </signallists>
+    <prefbases>
+        <prefbase id="0" >
+            <pref name="End Time" value="89890" />
+            <pref name="Start Time" value="0" />
+        </prefbase>
+    </prefbases>
+    <bookmarkbases>
+        <bookmarks id="0">
+        </bookmarks>
+    </bookmarkbases>
+    <cursorbases>
+        <cursors id="0">
+            <cursor value="30000" label="Cursor 1" locked="0" />
+        </cursors>
+    </cursorbases>
+    <measurementbases>
+    </measurementbases>
+    <commentbases>
+        <comments id="0">
+        </comments>
+    </commentbases>
+    <views>
+        <view signallist="0" propertybase="0" prefbase="0" type="1" bookmarks="0" cursors="0" measurements="-1" comments="-1" />
+    </views>
+</config>

@@ -49,9 +49,18 @@ end UC;
 --}} End of automatically maintained section
 
 architecture UC of UC is
+signal tipoR : std_logic;
 begin
-
+	-- '0' indica que o segundo operando vem de um registrador
+	-- '1' indica que o segundo operando vem de um imediato
 	with opcode select
+	OrigULA <= '0' when "000000", -- tipo R
+	           '0' when "000100", -- beq
+			   '0' when "000101", -- bne
+			   '0' when "001010", -- slti
+		 	   '1' when others;
+	
+	with opcode select						  
 	RegDst <= '1' when "000000",
 			  '0' when others;
 	
@@ -68,8 +77,12 @@ begin
 			  "11" when "000101", -- bne
 			  "00" when others;
 	
+    with func select
+	tipoR <= '0' when "001000", -- jr é a única instrução tipo R que não escreve num registrador			  
+			 '1' when others;
+	
 	with opcode select
-	EscreveReg <= '1' when "000000",
+	EscreveReg <= tipoR when "000000",
 				  '1' when "100011",
 				  '1' when "001000",
 				  '1' when "001010",
@@ -78,7 +91,7 @@ begin
 	
 	with opcode select
 	MemParaReg <= '1' when "100011",
-	'0' when others;
+	              '0' when others;
 	
 	with opcode select
 	Link <= '1' when "000011",
@@ -90,21 +103,24 @@ begin
 	
 	process(opcode, func)
 	--    [-----j----]      [------jal----  ]                 [------jr-----]                 
+	begin
 	if(opcode = "000010" or opcode = "000011" or (opcode = "000000" and func = "001000")) then
 		Salto <= '1';
 	else
 		Salto <= '0';
 	end if;
 					   
-	if((opcode = "000000" and func = "100000") or opcode = "000100") then
+	if((opcode = "000000" and func = "100000")) then
 		OpUla <= "00";
 	elsif(opcode = "000000" and func = "100001") then
 		OpUla <= "01";
-	elsif((opcode = "000000" and func = "101010") or opcode = "001001" or opcode = "000100" or opcode = "000101") then
+	elsif((opcode = "000000" and func = "101010") or opcode = "001010" or opcode = "000100" or opcode = "000101") then
 		OpUla <= "10";
+	elsif(opcode = "000000" and func = "000000") then
+		OpUla <= "11";
 	else
 		OpUla <= "00";
-		
+	end if;
 	
 	end process;
 		

@@ -8,7 +8,8 @@ architecture TB of TB_IF is
 
 	component Estagio_IF is
 	  port(
-	       CLK : in STD_LOGIC;
+	  	   CLK : in STD_LOGIC;
+	  	   Reset : in STD_LOGIC;
 	       Done_in : in STD_LOGIC;
 	       Excecao : in STD_LOGIC;
 	       IF_Flush : in STD_LOGIC := '0';
@@ -31,6 +32,7 @@ architecture TB of TB_IF is
 	
 	-- sinais --
 	signal CLK : std_logic;
+	signal Reset : STD_LOGIC;
 	signal Done_in : std_logic;
 	signal Excecao : std_logic;
 	signal IF_Flush: std_logic;
@@ -53,6 +55,7 @@ begin
 	dut : Estagio_IF
 	port map(
 		CLK => CLK,
+		Reset => Reset,
 		Done_in => Done_in,
 		Excecao => Excecao,
 		IF_Flush => IF_Flush,
@@ -75,6 +78,10 @@ begin
 	begin
 		-- Primeira operação --
 		-- Desviar para o endereço 4 através de uma operação de jump
+		
+		Reset <= '1';
+		wait for 2 ns;
+		Reset<= '0';
 		
 		CLK <= '0';
 		Done_in <= '1';
