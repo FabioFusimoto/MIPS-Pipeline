@@ -1429,3 +1429,136 @@ run
 endsim
 # KERNEL: stopped at time: 4782475 ns
 # VSIM: Simulation has finished.
+# Adding file C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIleram.awc ... Done
+# Warning: /Ram/Clock has not been found in the ASDB file.
+# Warning: /Ram/enable has not been found in the ASDB file.
+# Warning: /Ram/r has not been found in the ASDB file.
+# Warning: /Ram/w has not been found in the ASDB file.
+# Warning: /Ram/ender has not been found in the ASDB file.
+# Warning: /Ram/pronto has not been found in the ASDB file.
+# Warning: /Ram/dadoOut has not been found in the ASDB file.
+# Warning: /Ram/Mram has not been found in the ASDB file.
+# Warning: /Ram/rw has not been found in the ASDB file.
+# Warning: /Ram/BE has not been found in the ASDB file.
+# Warning: /Ram/BP has not been found in the ASDB file.
+# Warning: /Ram/NA has not been found in the ASDB file.
+# Warning: /Ram/Tz has not been found in the ASDB file.
+# Warning: /Ram/Twrite has not been found in the ASDB file.
+# Warning: /Ram/Tsetup has not been found in the ASDB file.
+# Warning: /Ram/Tread has not been found in the ASDB file.
+# Warning: /testeCacheI/Clock has not been found in the ASDB file.
+# Warning: /testeCacheI/enable has not been found in the ASDB file.
+# Warning: /testeCacheI/w has not been found in the ASDB file.
+# Warning: /testeCacheI/data_out has not been found in the ASDB file.
+# Warning: /testeCacheI/endereco_in has not been found in the ASDB file.
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/CacheIeRAM.bde $dsn/src/testeCacheI.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "comportamental" of Entity "CacheI"
+# File: .\..\compile\TB_CacheI.vhd
+# Compile Entity "TB_CacheI"
+# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
+# File: .\..\compile\CacheIeRAM.vhd
+# Compile Entity "CacheIeRAM"
+# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
+# File: .\..\compile\testeCacheI.vhd
+# Compile Entity "testeCacheI"
+# Compile Architecture "testeCacheI" of Entity "testeCacheI"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/CacheIeRAM.bde $dsn/src/testeCacheI.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "comportamental" of Entity "CacheI"
+# Error: COMP96_0025: CacheI.vhd : (35, 38): Identifier or string literal expected.
+# File: .\..\compile\TB_CacheI.vhd
+# Compile Entity "TB_CacheI"
+# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
+# File: .\..\compile\CacheIeRAM.vhd
+# Compile Entity "CacheIeRAM"
+# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
+# File: .\..\compile\testeCacheI.vhd
+# Compile Entity "testeCacheI"
+# Compile Architecture "testeCacheI" of Entity "testeCacheI"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.7 [s]
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/CacheIeRAM.bde $dsn/src/testeCacheI.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "comportamental" of Entity "CacheI"
+# File: .\..\compile\TB_CacheI.vhd
+# Compile Entity "TB_CacheI"
+# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
+# File: .\..\compile\CacheIeRAM.vhd
+# Compile Entity "CacheIeRAM"
+# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
+# File: .\..\compile\testeCacheI.vhd
+# Compile Entity "testeCacheI"
+# Compile Architecture "testeCacheI" of Entity "testeCacheI"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+asim -O5 +access +r +m+testeCacheI testeCacheI testeCacheI
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  TOP instance.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6225 kB (elbread=1280 elab2=4806 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\wave.asdb
+#  20:38, terça-feira, 2 de julho de 2019
+#  Simulation has been initialized
+# 5 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Fernanda/Documents/GitHub/MIPS-Pipeline/memoria/hierarquiaDeMemoria/hierarquiaDeMemoria/src/wave.asdb'.
+run
+# KERNEL: ERROR  : TextIO internal error: Could not read type "STRING" from line.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /testeCacheI/U2/U2,  Process: Carga_Inicial_e_Ram_Memoria.
+# KERNEL: ERROR  : TextIO internal error: Could not read type "STRING" from line.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /testeCacheI/U2/U2,  Process: Carga_Inicial_e_Ram_Memoria.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  TOP instance.
+endsim
+# KERNEL: stopped at time: 1221975 ns
+# VSIM: Simulation has finished.

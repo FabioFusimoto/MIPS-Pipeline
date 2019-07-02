@@ -32,16 +32,16 @@ signal  cacheI : cache_instrucoes := ( others  => (others => '0')) ;
 
 begin  
 	
-	process(endereco_in, data_in, doneM, clk) is
+	process(endereco_in, data_in, doneM) is
  
 	begin
-		if clk'event and clk = '0' then
+	--	if clk'event and clk = '0' then
 			endereco_outM <= endereco_in;
 			R <= '1';
 			if doneM = '1' then
 				data_out <= data_in;
 				R <= '0';
 			end if;
-		end if;					 
+	--	end if;					 
 	end process;
 end comportamental;
