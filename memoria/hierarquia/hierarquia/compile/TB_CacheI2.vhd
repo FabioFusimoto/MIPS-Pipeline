@@ -7,9 +7,9 @@
 --
 -------------------------------------------------------------------------------
 --
--- File        : C:\Users\Julia\Documents\GitHub\MIPS-Pipeline\memoria\hierarquia\hierarquia\compile\TB_CacheI2.vhd
--- Generated   : Tue Jul  2 02:00:34 2019
--- From        : C:\Users\Julia\Documents\GitHub\MIPS-Pipeline\memoria\hierarquia\hierarquia\src\TB_CacheI2.bde
+-- File        : C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquia\hierarquia\compile\TB_CacheI2.vhd
+-- Generated   : Tue Jul  2 09:12:38 2019
+-- From        : C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquia\hierarquia\src\TB_CacheI2.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
 -------------------------------------------------------------------------------
@@ -51,10 +51,12 @@ begin
 	Enable <= '1';
 	Reset <= '0';
 	w <= '0';
-	enderecoIn <= "00000000";
-    wait for 10 ns;
+	enderecoIn <= "00000000";  
+	wait for 10 ns;
 
 end process Estimulos;
+
+
 
 
 clockP: process		 

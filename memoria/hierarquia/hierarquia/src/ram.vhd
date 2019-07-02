@@ -24,7 +24,7 @@ use IEEE.std_logic_1164.all;
 use IEEE.std_logic_unsigned.all;
 use std.textio.all;
 use ieee.std_logic_arith.all;
-use ieee.math_real.all;
+use ieee.math_real.all;	   
 
 
 entity Ram is
@@ -53,13 +53,14 @@ architecture Ram of Ram is
 ---- Architecture declarations -----
 type 	tipo_memoria  is array (0 to 2**BE - 1) of std_logic_vector(BP - 1 downto 0);
 signal Mram: tipo_memoria := ( others  => (others => '0')) ;
-signal rw : std_logic_vector(1 downto 0);
+signal rw : std_logic_vector(1 downto 0);		
+signal dados_saida : std_logic_vector(15 downto 0) := x"FFFF";
 
 
 begin
 ---- Processes ----
 
-Carga_Inicial_e_Ram_Memoria :process (Clock, ender, dado, enable, rw) 
+Carga_Inicial_e_Ram_Memoria : process (Clock, ender, dado, enable, r, w) 
 variable endereco: integer range 0 to (2**BE - 1);
 variable inicio: std_logic := '1';
 function fill_memory return tipo_memoria is
@@ -122,10 +123,18 @@ if enable = '1' then
 		endereco := conv_integer(ender);
 		rw(1) <= r;
 		rw(0) <= w;
+		--rw <= "10";	 
+
 		case rw is
 			when "10" => -- Ciclo de Leitura
-				dado <= Mram(endereco) after Tread;
-				pronto <= '1' after Tread;				 
+			--	dado <= Mram(endereco) after Tread;
+			--	pronto <= '1' after Tread;			
+				dados_saida <= x"0000" after Tread;	
+				if(dados_saida = x"0000") then
+					pronto <= '0' after Tread;
+				else
+					pronto <= '1' after Tread;
+				end if;
 			when "01" => --Ciclo de Escrita
 				Mram(endereco) <= dado after Twrite;
 				pronto <= '1' after Twrite;	
@@ -134,6 +143,7 @@ if enable = '1' then
 			when others => -- Ciclo inválido
 				Null;
 		end case;
+		dado <= dados_saida;
 	end if;
 end if;	
 if enable = '0' then

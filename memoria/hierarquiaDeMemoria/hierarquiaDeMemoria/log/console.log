@@ -1,0 +1,716 @@
+# Design: Design hierarquiaDeMemoria already active.
+# 
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: Flow Manager: Not Defined
+acom -reorder -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => Ram
+# File: c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Architecture "Ram" of Entity "Ram"
+# Error: COMP96_0078: RAM.vhd : (62, 54): Unknown identifier "dado".
+# Error: COMP96_0348: RAM.vhd : (62, 54): Name on sensitivity list must denote a signal.
+# Error: COMP96_0078: RAM.vhd : (120, 4): Unknown identifier "dado".
+# Error: COMP96_0133: RAM.vhd : (120, 4): Cannot find object declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# Error: COMP96_0078: RAM.vhd : (120, 4): Unknown identifier "dado".
+# Error: COMP96_0133: RAM.vhd : (120, 4): Cannot find object declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+Ram Ram Ram
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6217 kB (elbread=1280 elab2=4799 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\wave.asdb
+#  12:10, terça-feira, 2 de julho de 2019
+#  Simulation has been initialized
+# 16 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/hierarquiaDeMemoria/hierarquiaDeMemoria/src/wave.asdb'.
+run
+# KERNEL: ERROR  : TextIO internal error: Could not read type "STRING" from line.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /Ram,  Process: Carga_Inicial_e_Ram_Memoria.
+# KERNEL: ERROR  : TextIO internal error: Could not read type "STRING" from line.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /Ram,  Process: Carga_Inicial_e_Ram_Memoria.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# DRC: Checking file 'c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_RAM.bde'.
+# DRC: TB_RAM.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\TB_RAM.vhd from c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_RAM.bde ...
+# Generation successful
+# Warning: Unable automatically update sensitivity list of clk process. Special comment was not found in process code.
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde
+# DRC: Checking file 'c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_RAM.bde'.
+# DRC: TB_RAM.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\TB_RAM.vhd from c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_RAM.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+# Symbol: Fub1 has been replaced by symbol: TB_RAM
+# Symbol: Fub2 has been replaced by symbol: Ram
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde
+# DRC: Checking file 'c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_RAM.bde'.
+# DRC: TB_RAM.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\TB_RAM.vhd from c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_RAM.bde ...
+# Generation successful
+# DRC: Checking file 'c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeRAM.bde'.
+# DRC: Warning: testeRAM.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeRAM.vhd from c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeRAM.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+testeRAM testeRAM testeRAM
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7243 kB (elbread=1280 elab2=5825 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\wave.asdb
+#  12:23, terça-feira, 2 de julho de 2019
+#  Simulation has been initialized
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde
+# DRC: Checking file 'c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeRAM.bde'.
+# DRC: Warning: testeRAM.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeRAM.vhd from c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeRAM.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+testeRAM testeRAM testeRAM
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7243 kB (elbread=1280 elab2=5825 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\wave.asdb
+#  12:24, terça-feira, 2 de julho de 2019
+#  Simulation has been initialized
+# 7 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/hierarquiaDeMemoria/hierarquiaDeMemoria/src/wave.asdb'.
+run
+# KERNEL: ERROR  : TextIO internal error: Could not read type "STRING" from line.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /testeRAM/U2,  Process: Carga_Inicial_e_Ram_Memoria.
+# KERNEL: ERROR  : TextIO internal error: Could not read type "STRING" from line.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /testeRAM/U2,  Process: Carga_Inicial_e_Ram_Memoria.
+endsim
+# KERNEL: stopped at time: 6916900 ns
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde
+# DRC: Checking file 'c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_RAM.bde'.
+# DRC: TB_RAM.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\TB_RAM.vhd from c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_RAM.bde ...
+# Generation successful
+# DRC: Checking file 'c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeRAM.bde'.
+# DRC: Warning: testeRAM.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeRAM.vhd from c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeRAM.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# Error: COMP96_0242: TB_RAM.bde(TB_RAM.vhd) : (60, 2): Wait statement in process with explicit sensitivity list is not allowed.
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# Error: COMP96_0255: RAM.vhd : (119, 44): Attribute 'LAST_EVENT of a signal of mode out cannot be read.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde
+# DRC: Checking file 'c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_RAM.bde'.
+# DRC: TB_RAM.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\TB_RAM.vhd from c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_RAM.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# Error: COMP96_0242: TB_RAM.bde(TB_RAM.vhd) : (60, 2): Wait statement in process with explicit sensitivity list is not allowed.
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde
+# DRC: Checking file 'c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_RAM.bde'.
+# DRC: TB_RAM.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\TB_RAM.vhd from c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_RAM.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde
+# DRC: Checking file 'c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeRAM.bde'.
+# DRC: Warning: testeRAM.bde - 0 error(s), 4 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeRAM.vhd from c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeRAM.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# Warning: ELAB1_0026: testeRAM.bde(testeRAM.vhd) : (83, 0): There is no default binding for component "TB_RAM". (Port "clk" is not on the entity).
+# Warning: ELAB1_0026: testeRAM.bde(testeRAM.vhd) : (94, 0): There is no default binding for component "Ram". (Port "clk" is not on the entity).
+# Compile success 0 Errors 2 Warnings  Analysis time :  47.0 [ms]
+asim -O5 +access +r +m+testeRAM testeRAM testeRAM
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.6 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELBREAD: Warning: ELBREAD_0037 testeRAM.vhd (83): Component /testeRAM/U1 : TB_RAM not bound.
+# ELBREAD: Warning: ELBREAD_0037 testeRAM.vhd (94): Component /testeRAM/U2 : Ram not bound.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6172 kB (elbread=1280 elab2=4754 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\wave.asdb
+#  12:32, terça-feira, 2 de julho de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/hierarquiaDeMemoria/hierarquiaDeMemoria/src/wave.asdb'.
+# Warning: WAVEFORM: Object matching /testeRAM/Clock not found in c:/My_Designs/hierarquiaDeMemoria/hierarquiaDeMemoria/src/wave.asdb.
+# KERNEL: Warning: KERNEL_0291 Signal '/testeRAM/Enable' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/testeRAM/Pronto' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/testeRAM/r' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/testeRAM/w' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/testeRAM/dado' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/testeRAM/endereco' has already been traced.
+# 1 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/hierarquiaDeMemoria/hierarquiaDeMemoria/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+testeRAM testeRAM testeRAM
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELBREAD: Warning: ELBREAD_0037 testeRAM.vhd (83): Component /testeRAM/U1 : TB_RAM not bound.
+# ELBREAD: Warning: ELBREAD_0037 testeRAM.vhd (94): Component /testeRAM/U2 : Ram not bound.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6172 kB (elbread=1280 elab2=4754 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\wave.asdb
+#  12:32, terça-feira, 2 de julho de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/hierarquiaDeMemoria/hierarquiaDeMemoria/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde
+# DRC: Checking file 'c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeRAM.bde'.
+# DRC: Warning: testeRAM.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeRAM.vhd from c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeRAM.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+asim -O5 +access +r +m+testeRAM testeRAM testeRAM
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7243 kB (elbread=1280 elab2=5825 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\wave.asdb
+#  12:33, terça-feira, 2 de julho de 2019
+#  Simulation has been initialized
+# 7 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/hierarquiaDeMemoria/hierarquiaDeMemoria/src/wave.asdb'.
+run
+# KERNEL: ERROR  : TextIO internal error: Could not read type "STRING" from line.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /testeRAM/U2,  Process: Carga_Inicial_e_Ram_Memoria.
+# KERNEL: ERROR  : TextIO internal error: Could not read type "STRING" from line.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /testeRAM/U2,  Process: Carga_Inicial_e_Ram_Memoria.
+endsim
+# KERNEL: stopped at time: 5465705 ns
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde
+# DRC: Checking file 'c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeRAM.bde'.
+# DRC: Warning: testeRAM.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeRAM.vhd from c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeRAM.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde
+# DRC: Checking file 'c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeRAM.bde'.
+# DRC: Warning: testeRAM.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeRAM.vhd from c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeRAM.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim -O5 +access +r +m+testeRAM testeRAM testeRAM
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7243 kB (elbread=1280 elab2=5825 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\wave.asdb
+#  12:36, terça-feira, 2 de julho de 2019
+#  Simulation has been initialized
+# 7 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/hierarquiaDeMemoria/hierarquiaDeMemoria/src/wave.asdb'.
+run
+# KERNEL: ERROR  : TextIO internal error: Could not read type "STRING" from line.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /testeRAM/U2,  Process: Carga_Inicial_e_Ram_Memoria.
+# KERNEL: ERROR  : TextIO internal error: Could not read type "STRING" from line.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /testeRAM/U2,  Process: Carga_Inicial_e_Ram_Memoria.
+endsim
+# KERNEL: stopped at time: 2430560 ns
+# VSIM: Simulation has finished.
+# Fub names have changed:
+#  Ram -> Fub3
+#  TB_RAM -> Fub4
+# Warning: Unable automatically update sensitivity list of clk process. Special comment was not found in process code.
+# Symbol: Fub1 has been replaced by symbol: TB_RAM
+# Symbol: Fub2 has been replaced by symbol: Ram
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde
+# DRC: Checking file 'c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_RAM.bde'.
+# DRC: TB_RAM.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\TB_RAM.vhd from c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_RAM.bde ...
+# Generation successful
+# DRC: Checking file 'c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeRAM.bde'.
+# DRC: Warning: testeRAM.bde - 0 error(s), 4 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeRAM.vhd from c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeRAM.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# Error: COMP96_0207: testeRAM.bde(testeRAM.vhd) : (100, 1): No actual specified for local port "ender".
+# Compile failure 1 Errors 0 Warnings  Analysis time :  94.0 [ms]
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde
+# DRC: Checking file 'c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeRAM.bde'.
+# DRC: Warning: testeRAM.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeRAM.vhd from c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeRAM.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde
+# DRC: Checking file 'c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeRAM.bde'.
+# DRC: Warning: testeRAM.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeRAM.vhd from c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeRAM.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+testeRAM testeRAM testeRAM
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6219 kB (elbread=1280 elab2=4801 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\wave.asdb
+#  12:42, terça-feira, 2 de julho de 2019
+#  Simulation has been initialized
+# 7 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/hierarquiaDeMemoria/hierarquiaDeMemoria/src/wave.asdb'.
+run
+# KERNEL: ERROR  : TextIO internal error: Could not read type "STRING" from line.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /testeRAM/U2,  Process: Carga_Inicial_e_Ram_Memoria.
+# KERNEL: ERROR  : TextIO internal error: Could not read type "STRING" from line.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /testeRAM/U2,  Process: Carga_Inicial_e_Ram_Memoria.
+endsim
+# KERNEL: stopped at time: 5030940 ns
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+asim -O5 +access +r +m+testeRAM testeRAM testeRAM
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6219 kB (elbread=1280 elab2=4801 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\wave.asdb
+#  12:43, terça-feira, 2 de julho de 2019
+#  Simulation has been initialized
+# 7 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/hierarquiaDeMemoria/hierarquiaDeMemoria/src/wave.asdb'.
+run
+# KERNEL: ERROR  : TextIO internal error: Could not read type "STRING" from line.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /testeRAM/U2,  Process: Carga_Inicial_e_Ram_Memoria.
+# KERNEL: ERROR  : TextIO internal error: Could not read type "STRING" from line.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /testeRAM/U2,  Process: Carga_Inicial_e_Ram_Memoria.
+endsim
+# KERNEL: stopped at time: 3527995 ns
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# Error: COMP96_0078: RAM.vhd : (129, 5): Unknown identifier "dado".
+# Error: COMP96_0133: RAM.vhd : (129, 5): Cannot find object declaration.
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# Compile failure 2 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim -O5 +access +r +m+testeRAM testeRAM testeRAM
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6219 kB (elbread=1280 elab2=4801 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\hierarquiaDeMemoria\hierarquiaDeMemoria\src\wave.asdb
+#  12:46, terça-feira, 2 de julho de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/hierarquiaDeMemoria/hierarquiaDeMemoria/src/wave.asdb'.
+# KERNEL: Warning: KERNEL_0291 Signal '/testeRAM/Clock' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/testeRAM/enable' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/testeRAM/pronto' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/testeRAM/r' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/testeRAM/w' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/testeRAM/dadoOut' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/testeRAM/enderecoIn' has already been traced.
+# 0 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/hierarquiaDeMemoria/hierarquiaDeMemoria/src/wave.asdb'.
+run
+# KERNEL: ERROR  : TextIO internal error: Could not read type "STRING" from line.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /testeRAM/U2,  Process: Carga_Inicial_e_Ram_Memoria.
+# KERNEL: ERROR  : TextIO internal error: Could not read type "STRING" from line.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /testeRAM/U2,  Process: Carga_Inicial_e_Ram_Memoria.
+endsim
+# KERNEL: stopped at time: 3378915 ns
+# VSIM: Simulation has finished.

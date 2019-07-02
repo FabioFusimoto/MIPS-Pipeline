@@ -1,0 +1,12 @@
+[Version]
+Version=10.5
+[Designs]
+hierarquiadememoria=.\hierarquiaDeMemoria\hierarquiaDeMemoria.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+hierarquiadememoria=1
