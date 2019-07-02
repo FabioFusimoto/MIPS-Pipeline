@@ -1,0 +1,17 @@
+153
+~E 1 "./../src/test.vhd" 5 adder
+~A 1 "./../src/test.vhd" 12 behavioral
+~E 1 "./../src/BancadaDeTeste.vhd" 28 BancadaDeTeste
+~E 1 "./../src/cacheI.vhd" 5 cacheI
+~A 1 "./../src/cacheI.vhd" 24 comportamental
+~E 1 "./../compile/Fub1.vhd" 27 Fub1
+~A 1 "./../compile/Fub1.vhd" 37 Fub1
+~E 1 "./../src/ram.vhd" 30 Ram
+~A 1 "./../src/ram.vhd" 51 Ram
+~E 1 "./../src/test.vhd" 7 tb_adder
+~A 1 "./../src/test.vhd" 10 behavior
+~E 1 "./../src/tb_cache.vhd" 4 TB_CACHEI
+~A 1 "./../src/tb_cache.vhd" 7 TB
+~E 1 "./../src/test.vhd" 4 test_tb
+~A 1 "./../src/test.vhd" 7 behavior
+~E 1 "./../compile/toplevel.vhd" 27 toplevel

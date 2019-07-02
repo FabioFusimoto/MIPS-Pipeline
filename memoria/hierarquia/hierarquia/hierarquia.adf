@@ -1,0 +1,56 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=hierarquia
+
+[Library]
+hierarquia=.\hierarquia\hierarquia.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+hierarquia=.
+Active_lib=
+
+
+[Files]
+/cacheI.vhd=-1
+/ram.vhd=-1
+/Fub1.bde=-1
+/tb_cache.vhd=-1
+/test.vhd=-1
+
+[Files.Data]
+.\src\cacheI.vhd=VHDL Source Code
+.\src\ram.vhd=VHDL Source Code
+.\src\Fub1.bde=Block Diagram
+.\src\tb_cache.vhd=VHDL Source Code
+.\src\test.vhd=VHDL Source Code
+.\compile\Fub1.vhd=VHDL Source Code
+
+[file_out:/Fub1.bde]
+/..\compile\Fub1.vhd=-1
