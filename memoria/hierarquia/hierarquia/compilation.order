@@ -3,3 +3,6 @@
 .\src\Fub1.bde
 .\src\tb_cache.vhd
 .\src\test.vhd
+.\src\testeCacheI.bde
+.\src\cacheI2.vhd
+.\src\TB_CacheI2.bde

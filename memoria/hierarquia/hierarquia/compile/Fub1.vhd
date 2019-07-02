@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\Users\Julia\Documents\GitHub\MIPS-Pipeline\memoria\hierarquia\hierarquia\compile\Fub1.vhd
--- Generated   : Mon Jul  1 18:45:00 2019
+-- Generated   : Tue Jul  2 02:03:57 2019
 -- From        : C:\Users\Julia\Documents\GitHub\MIPS-Pipeline\memoria\hierarquia\hierarquia\src\Fub1.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -30,7 +30,8 @@ entity Fub1 is
        Enable : in STD_LOGIC;
        reset : in STD_LOGIC;
        w : in STD_LOGIC;
-       enderecoIn : in STD_LOGIC_VECTOR(31 downto 0)
+       enderecoIn : in STD_LOGIC_VECTOR(7 downto 0);
+       data_out : out STD_LOGIC_VECTOR(15 downto 0)
   );
 end Fub1;
 
@@ -43,7 +44,7 @@ end aldec_usn2slv32;
 
 ---- Component declarations -----
 
-component cacheI
+component cacheI2
   generic(
        TAM_END : INTEGER := 14;
        TAM_DADO : INTEGER := 32;
@@ -51,11 +52,12 @@ component cacheI
        num_blocos : INTEGER := 256
   );
   port (
-       data : in STD_LOGIC_VECTOR(TAM_DADO-1 downto 0);
+       data_in : in STD_LOGIC_VECTOR(TAM_DADO-1 downto 0);
        doneM : in STD_LOGIC;
        endereco_in : in UNSIGNED(TAM_END-1 downto 0);
        reset : in STD_LOGIC;
        R : out STD_LOGIC;
+       data_out : out STD_LOGIC_VECTOR(TAM_DADO-1 downto 0);
        endereco_outM : out UNSIGNED(TAM_END-1 downto 0)
   );
 end component;
@@ -87,27 +89,28 @@ end component;
 
 signal done : STD_LOGIC;
 signal r : STD_LOGIC;
-signal dado : STD_LOGIC_VECTOR(31 downto 0);
+signal dado : STD_LOGIC_VECTOR(15 downto 0);
 signal endereco : STD_LOGIC_VECTOR(31 downto 0);
 
 begin
 
 ----  Component instantiations  ----
 
-U1 : cacheI
+U11 : cacheI2
   port map(
        R => r,
        aldec_usn2slv32(endereco_outM) => endereco( 31 downto 0 ),
-       data => dado(31 downto 0),
+       data_in => dado(15 downto 0),
+       data_out => data_out(15 downto 0),
        doneM => done,
-       endereco_in => unsigned(enderecoIn( 31 downto 0 )),
+       endereco_in => unsigned(enderecoIn( 7 downto 0 )),
        reset => reset
   );
 
 U2 : Ram
   port map(
        Clock => Clock,
-       dado => dado(31 downto 0),
+       dado => dado(15 downto 0),
        enable => Enable,
        ender => endereco(31 downto 0),
        pronto => done,

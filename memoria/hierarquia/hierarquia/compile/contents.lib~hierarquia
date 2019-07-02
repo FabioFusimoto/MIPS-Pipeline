@@ -1,17 +1,23 @@
-153
+359
 ~E 1 "./../src/test.vhd" 5 adder
 ~A 1 "./../src/test.vhd" 12 behavioral
 ~E 1 "./../src/BancadaDeTeste.vhd" 28 BancadaDeTeste
 ~E 1 "./../src/cacheI.vhd" 5 cacheI
-~A 1 "./../src/cacheI.vhd" 24 comportamental
+~A 1 "./../src/cacheI.vhd" 25 comportamental
+~E 1 "./../src/cacheI2.vhd" 5 cacheI2
+~A 1 "./../src/cacheI2.vhd" 25 comportamental
 ~E 1 "./../compile/Fub1.vhd" 27 Fub1
-~A 1 "./../compile/Fub1.vhd" 37 Fub1
+~A 1 "./../compile/Fub1.vhd" 38 Fub1
 ~E 1 "./../src/ram.vhd" 30 Ram
 ~A 1 "./../src/ram.vhd" 51 Ram
 ~E 1 "./../src/test.vhd" 7 tb_adder
 ~A 1 "./../src/test.vhd" 10 behavior
 ~E 1 "./../src/tb_cache.vhd" 4 TB_CACHEI
 ~A 1 "./../src/tb_cache.vhd" 7 TB
+~E 1 "./../compile/TB_CacheI2.vhd" 27 TB_CacheI2
+~A 1 "./../compile/TB_CacheI2.vhd" 38 TB_CacheI2
 ~E 1 "./../src/test.vhd" 4 test_tb
 ~A 1 "./../src/test.vhd" 7 behavior
+~E 1 "./../compile/testeCacheI.vhd" 27 testeCacheI
+~A 1 "./../compile/testeCacheI.vhd" 30 testeCacheI
 ~E 1 "./../compile/toplevel.vhd" 27 toplevel
