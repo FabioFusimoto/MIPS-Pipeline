@@ -1,47 +1,57 @@
+-------------------------------------------------------------------------------
+--
+-- Title       : CacheD
+-- Design      : hierarquiaDeMemoria
+-- Author      : julia.fernandes.moraes@usp.br
+-- Company     : usp
+--
+-------------------------------------------------------------------------------
+--
+-- File        : C:\Users\Julia\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheD.vhd
+-- Generated   : Tue Jul  2 23:24:05 2019
+-- From        : interface description file
+-- By          : Itf2Vhdl ver. 1.22
+--
+-------------------------------------------------------------------------------
+--
+-- Description : 
+--
+-------------------------------------------------------------------------------
+
+--{{ Section below this comment is automatically maintained
+--   and may be overwritten
+--{entity {CacheD} architecture {CacheD}}
+
 library IEEE;
-use IEEE.STD_LOGIC_1164.all;
-use IEEE.STD_LOGIC_ARITH.all;
+use IEEE.std_logic_arith.all;
+use IEEE.std_logic_unsigned.all;
+use IEEE.std_logic_1164.all;
 
 entity CacheD is
-	generic(
-		TAM_END : integer := 8;	  -- mudar para 16
-		TAM_DADO : integer := 16; -- mudar para 32
-		tam_linha : integer := 1 + 1 + 4*16;	--mudar para 1 + 2 + 16*32   
-		num_blocos : integer := 16 --mudar para 256
-	);
-	
-	port(		 
-		endereco_in : in unsigned(TAM_END - 1 downto 0);
-		data_in : in std_logic_vector(TAM_DADO - 1 downto 0);
-		doneM : in std_logic;  
-		clk		: in	std_logic;
-		
-		endereco_outM : out unsigned(TAM_END - 1 downto 0);	
-		data_out: out std_logic_vector(TAM_DADO - 1 downto 0); 
-		R : out std_logic
-	);
+	 generic(
+		TAM_END : INTEGER := 16;
+		TAM_DADO : INTEGER := 32;
+		tam_linha : INTEGER := 1+1+4*16;
+		num_blocos : INTEGER := 128
+	    );
+	 port(
+		 endereco_in : in UNSIGNED(TAM_END-1 downto 0);
+		 data_M : in STD_LOGIC_VECTOR(TAM_DADO-1 downto 0);
+		 data_W : in STD_LOGIC_VECTOR(TAM_DADO-1 downto 0);
+		 rw : in STD_LOGIC;
+		 doneM : in STD_LOGIC;
+		 endereco_outM : out UNSIGNED(TAM_END-1 downto 0);
+		 data_out : out STD_LOGIC_VECTOR(TAM_DADO-1 downto 0);
+		 R : out STD_LOGIC;
+		 W : out STD_LOGIC
+	     );
 end CacheD;
 
-architecture comportamental of CacheD is	 															  
+--}} End of automatically maintained section
 
+architecture CacheD of CacheD is
+begin
 
---type conj_cache is array (TAM_CONJ_CACHE - 1 downto 0) of std_logic_vector(LINHA_CACHE - 1 downto 0);  
-type 	cache_instrucoes  is array (0 to num_blocos - 1) of std_logic_vector(tam_linha - 1 downto 0);
-signal  cacheD : cache_instrucoes := ( others  => (others => '0')) ;
+	 -- enter your statements here --
 
-
-begin  
-	
-	process(endereco_in, data_in, doneM) is
- 
-	begin
-	--	if clk'event and clk = '0' then
-			endereco_outM <= endereco_in;
-			R <= '1';
-			if doneM = '1' then
-				data_out <= data_in;
-				R <= '0';
-			end if;
-	--	end if;					 
-	end process;
-end comportamental;
+end CacheD;
