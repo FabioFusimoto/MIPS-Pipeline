@@ -81,7 +81,7 @@ function fill_memory return tipo_memoria is
 			readline(infile,buff); -- Lê um linha do infile e coloca no buff
 			read(buff, addr_s); -- Leia o conteudo de buff até encontrar um espaço e atribui à addr_s, ou seja, leio o endereço
 			read(buff, pal_cnT); -- Leia o número de bytes da próxima linha
-			-- addr_1 := lookup(addr_s(4)) * 4096 + lookup(addr_s(3)) * 256 + lookup(addr_s(2)) * 16 + lookup(addr_s(1));
+			-- addr_1 := lookup(addr_s(4))  4096 + lookup(addr_s(3))  256 + lookup(addr_s(2)) * 16 + lookup(addr_s(1));
 			addr_1 := 0;
 			upreal := real(BE)/8.0;
 			up := integer((ceil(upreal)));
