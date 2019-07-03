@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeRAM.vhd
--- Generated   : Tue Jul  2 17:33:16 2019
+-- Generated   : Tue Jul  2 22:29:23 2019
 -- From        : C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeRAM.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -50,17 +50,17 @@ component Ram
        ender : in STD_LOGIC_VECTOR(BE-1 downto 0);
        r : in STD_LOGIC;
        w : in STD_LOGIC;
-       dadoOut : out STD_LOGIC_VECTOR(BP-1 downto 0);
+       dadoOut : out STD_LOGIC_VECTOR(31 downto 0);
        pronto : out STD_LOGIC
   );
 end component;
 component TB_RAM
   port (
-       dadoOut : in STD_LOGIC_VECTOR(15 downto 0);
+       dadoOut : in STD_LOGIC_VECTOR(31 downto 0);
        pronto : in STD_LOGIC;
        Clock : out STD_LOGIC;
        enable : out STD_LOGIC;
-       enderecoIn : out STD_LOGIC_VECTOR(7 downto 0);
+       enderecoIn : out STD_LOGIC_VECTOR(15 downto 0);
        r : out STD_LOGIC;
        w : out STD_LOGIC
   );
@@ -73,8 +73,8 @@ signal enable : STD_LOGIC;
 signal pronto : STD_LOGIC;
 signal r : STD_LOGIC;
 signal w : STD_LOGIC;
-signal dadoOut : STD_LOGIC_VECTOR(15 downto 0);
-signal enderecoIn : STD_LOGIC_VECTOR(7 downto 0);
+signal dadoOut : STD_LOGIC_VECTOR(31 downto 0);
+signal enderecoIn : STD_LOGIC_VECTOR(15 downto 0);
 
 begin
 
@@ -94,9 +94,9 @@ U1 : TB_RAM
 U2 : Ram
   port map(
        Clock => Clock,
-       dadoOut => dadoOut(15 downto 0),
+       dadoOut => dadoOut,
        enable => enable,
-       ender => enderecoIn(7 downto 0),
+       ender => enderecoIn(15 downto 0),
        pronto => pronto,
        r => r,
        w => w

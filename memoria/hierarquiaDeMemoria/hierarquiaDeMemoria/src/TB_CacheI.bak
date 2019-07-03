@@ -2,14 +2,14 @@ SCHM0106
 
 HEADER
 {
- FREEID 205
+ FREEID 239
  VARIABLES
  {
   #ARCHITECTURE="TB_CacheI"
   #BLOCKTABLE_FILE="#table.bde"
   #BLOCKTABLE_INCLUDED="1"
-  #DEFAULT_RANGE0="<range<index=\"0\"><name=\"data_out\"><left=\"15\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE1="<range<index=\"0\"><name=\"endereco_in\"><left=\"7\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE0="<range<index=\"0\"><name=\"data_out\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE1="<range<index=\"0\"><name=\"endereco_in\"><left=\"15\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
   #ENTITY="TB_CacheI"
   #LANGUAGE="VHDL"
   AUTHOR="Fernanda Parodi"
@@ -62,7 +62,7 @@ PAGE ""
    LABEL "Estimulos"
    TEXT 
 "Estimulos :\n"+
-"process (data_out, R)\n"+
+"process (data_out)\n"+
 "-- Section above this comment may be overwritten according to\n"+
 "-- \"Update sensitivity list automatically\" option status\n"+
 "-- declarations\n"+
@@ -70,7 +70,7 @@ PAGE ""
 "-- statements\t\n"+
 "\tenable <= '1';\n"+
 "\tw <= '0';\t  \n"+
-"\tendereco_in <= x\"00\"; \n"+
+"\tendereco_in <= x\"0000\"; \n"+
 "\n"+
 "\t\n"+
 "end process Estimulos;\n"+
@@ -81,12 +81,12 @@ PAGE ""
    SYNTAXCOLORED
    SHOWLABEL
    CORNER 10
-   VTX (  119, 123, 127, 131, 142 )
+   VTX (  119, 127, 131, 142 )
    VARIABLES
    {
-    #DIRECTION_LIST="119 123 "
+    #DIRECTION_LIST="119 "
    }
-   LIST (  119, 123 )
+   LIST (  119 )
   }
   INSTANCE  106, 0, 0
   {
@@ -95,7 +95,7 @@ PAGE ""
     #COMPONENT="BusInput"
     #CUSTOM_NAME=""
     #LIBRARY="#terminals"
-    #REFERENCE="data_out(15:0)"
+    #REFERENCE="data_out(31:0)"
     #SYMBOL="BusInput"
     #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
     #VHDL_TYPE="STD_LOGIC_VECTOR"
@@ -110,29 +110,6 @@ PAGE ""
    ALIGN 6
    MARGINS (1,1)
    PARENT 106
-  }
-  INSTANCE  108, 0, 0
-  {
-   VARIABLES
-   {
-    #COMPONENT="Input"
-    #CUSTOM_NAME=""
-    #LIBRARY="#terminals"
-    #REFERENCE="bit_leitura"
-    #SYMBOL="Input"
-    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
-    #VHDL_TYPE="STD_LOGIC"
-   }
-   COORD (460,520)
-   VERTEXES ( (2,122) )
-  }
-  TEXT  109, 0, 0
-  {
-   TEXT "$#REFERENCE"
-   RECT (280,503,409,538)
-   ALIGN 6
-   MARGINS (1,1)
-   PARENT 108
   }
   INSTANCE  110, 0, 0
   {
@@ -210,7 +187,7 @@ PAGE ""
     #COMPONENT="BusOutput"
     #CUSTOM_NAME=""
     #LIBRARY="#terminals"
-    #REFERENCE="endereco_in(7:0)"
+    #REFERENCE="endereco_in(15:0)"
     #SYMBOL="BusOutput"
     #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
     #VHDL_TYPE="STD_LOGIC_VECTOR"
@@ -221,7 +198,7 @@ PAGE ""
   TEXT  117, 0, 0
   {
    TEXT "$#REFERENCE"
-   RECT (932,483,1154,518)
+   RECT (932,483,1170,518)
    ALIGN 4
    MARGINS (1,1)
    PARENT 116
@@ -246,27 +223,6 @@ PAGE ""
   {
    NET 120
    VTX 118, 119
-  }
-  VTX  122, 0, 0
-  {
-   COORD (460,520)
-  }
-  VTX  123, 0, 0
-  {
-   COORD (540,520)
-  }
-  NET WIRE  124, 0, 0
-  {
-   VARIABLES
-   {
-    #NAME="R"
-    #VHDL_TYPE="STD_LOGIC"
-   }
-  }
-  WIRE  125, 0, 0
-  {
-   NET 124
-   VTX 122, 123
   }
   VTX  126, 0, 0
   {
@@ -377,7 +333,7 @@ PAGE ""
  
  BODY
  {
-  TEXT  188, 0, 0
+  TEXT  222, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -388,7 +344,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  189, 0, 0
+  TEXT  223, 0, 0
   {
    PAGEALIGN 10
    TEXT "$CREATIONDATE"
@@ -399,7 +355,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  190, 0, 0
+  TEXT  224, 0, 0
   {
    PAGEALIGN 10
    TEXT "Title:"
@@ -409,7 +365,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  191, 0, 0
+  TEXT  225, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -421,7 +377,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  192, 0, 0
+  TEXT  226, 0, 0
   {
    PAGEALIGN 10
    TEXT 
@@ -434,7 +390,7 @@ PAGE ""
    FONT (12,0,0,700,0,0,0,"Arial")
    MULTILINE
   }
-  TEXT  193, 0, 0
+  TEXT  227, 0, 0
   {
    PAGEALIGN 10
    TEXT "Page:"
@@ -444,7 +400,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  194, 0, 0
+  TEXT  228, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -456,7 +412,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  195, 0, 0
+  TEXT  229, 0, 0
   {
    PAGEALIGN 10
    TEXT "Revision:"
@@ -466,7 +422,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  196, 0, 0
+  TEXT  230, 0, 0
   {
    PAGEALIGN 10
    TEXT "$Revision"
@@ -477,7 +433,7 @@ PAGE ""
    FONT (12,0,0,700,0,204,0,"Arial")
    UPDATE 0
   }
-  GROUP  197, 0, 0
+  GROUP  231, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1120,2001,1501)
@@ -489,7 +445,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  198, 0, 0
+  GROUP  232, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1320,2001,1321)
@@ -501,7 +457,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  199, 0, 0
+  GROUP  233, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1260,2001,1261)
@@ -513,7 +469,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  200, 0, 0
+  GROUP  234, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1380,2001,1381)
@@ -525,7 +481,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  201, 0, 0
+  GROUP  235, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1440,2001,1441)
@@ -537,7 +493,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  202, 0, 0
+  GROUP  236, 0, 0
   {
    PAGEALIGN 10
    RECT (1300,1120,1301,1261)
@@ -548,7 +504,7 @@ PAGE ""
     POINTS ( (0,0), (0,140) )
    }
   }
-  GROUP  203, 0, 0
+  GROUP  237, 0, 0
   {
    PAGEALIGN 10
    RECT (1300,1260,1301,1501)
@@ -559,7 +515,7 @@ PAGE ""
     POINTS ( (0,0), (0,240) )
    }
   }
-  BMPPICT  204, 0, 0
+  BMPPICT  238, 0, 0
   {
    PAGEALIGN 10
    RECT (1140,1180,1279,1225)

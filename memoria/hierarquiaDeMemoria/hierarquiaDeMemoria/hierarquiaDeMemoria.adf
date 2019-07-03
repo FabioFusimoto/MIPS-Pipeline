@@ -36,31 +36,40 @@ CompileWithDebug=0
 hierarquiaDeMemoria=.
 Active_lib=
 
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=ram|Ram|0 testecachei|testeCacheI|0 testeram|testeRAM|0
+ShowHide=ShowTopLevel
+Selected=
+
 [Files]
-/RAM.vhd=-1
 /TB_RAM.bde=-1
 /testeRAM.bde=-1
-/CacheI.vhd=-1
 /TB_CacheI.bde=-1
-/CacheIeRAM.bde=-1
 /testeCacheI.bde=-1
-/CacheIleram.awc=-1
+/RAM_inicializa.asdb=-1
+/RAM_inicializa.awc=-1
+/CacheIeRAM.bde=-1
+/CacheI.vhd=-1
+/Ram.vhd=-1
 
 [Files.Data]
-.\src\RAM.vhd=VHDL Source Code
 .\src\TB_RAM.bde=Block Diagram
 .\src\testeRAM.bde=Block Diagram
-.\src\CacheI.vhd=VHDL Source Code
 .\src\TB_CacheI.bde=Block Diagram
-.\src\CacheIeRAM.bde=Block Diagram
 .\src\testeCacheI.bde=Block Diagram
-.\src\CacheIleram.awc=Accelerated Waveform Configuration
+.\src\RAM_inicializa.asdb=Accelerated Waveform File
+.\src\RAM_inicializa.awc=Accelerated Waveform Configuration
+.\src\CacheIeRAM.bde=Block Diagram
+.\src\CacheI.vhd=VHDL Source Code
+.\src\Ram.vhd=VHDL Source Code
 .\compile\TB_RAM.vhd=VHDL Source Code
 .\compile\testeRAM.vhd=VHDL Source Code
 .\compile\TB_CacheI.vhd=VHDL Source Code
-.\compile\CacheIeRAM.vhd=VHDL Source Code
 .\compile\testeCacheI.vhd=VHDL Source Code
-
+.\compile\CacheIeRAM.vhd=VHDL Source Code
 
 
 
@@ -72,7 +81,7 @@ Active_lib=
 /..\compile\testeRAM.vhd=-1
 [file_out:/TB_CacheI.bde]
 /..\compile\TB_CacheI.vhd=-1
-[file_out:/CacheIeRAM.bde]
-/..\compile\CacheIeRAM.vhd=-1
 [file_out:/testeCacheI.bde]
 /..\compile\testeCacheI.vhd=-1
+[file_out:/CacheIeRAM.bde]
+/..\compile\CacheIeRAM.vhd=-1

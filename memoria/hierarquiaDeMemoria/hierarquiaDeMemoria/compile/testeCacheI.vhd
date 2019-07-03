@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeCacheI.vhd
--- Generated   : Tue Jul  2 19:26:14 2019
+-- Generated   : Tue Jul  2 23:42:32 2019
 -- From        : C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -35,17 +35,17 @@ component CacheIeRAM
   port (
        Clock : in STD_LOGIC;
        enable : in STD_LOGIC;
-       endereco_in : in STD_LOGIC_VECTOR(7 downto 0);
+       endereco_in : in STD_LOGIC_VECTOR(15 downto 0);
        w : in std_logic;
-       data_out : out STD_LOGIC_VECTOR(15 downto 0)
+       data_out : out STD_LOGIC_VECTOR(31 downto 0)
   );
 end component;
 component TB_CacheI
   port (
-       data_out : in STD_LOGIC_VECTOR(15 downto 0);
+       data_out : in STD_LOGIC_VECTOR(31 downto 0);
        Clock : out STD_LOGIC;
        enable : out STD_LOGIC;
-       endereco_in : out STD_LOGIC_VECTOR(7 downto 0);
+       endereco_in : out STD_LOGIC_VECTOR(15 downto 0);
        w : out STD_LOGIC
   );
 end component;
@@ -55,8 +55,8 @@ end component;
 signal Clock : STD_LOGIC;
 signal enable : STD_LOGIC;
 signal w : STD_LOGIC;
-signal data_out : STD_LOGIC_VECTOR(15 downto 0);
-signal endereco_in : STD_LOGIC_VECTOR(7 downto 0);
+signal data_out : STD_LOGIC_VECTOR(31 downto 0);
+signal endereco_in : STD_LOGIC_VECTOR(15 downto 0);
 
 begin
 

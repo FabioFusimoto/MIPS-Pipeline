@@ -29,8 +29,8 @@ use ieee.math_real.all;
 
 entity Ram is
   generic(
-       BE : integer := 8;
-       BP : integer := 16;
+       BE : integer := 16;
+       BP : integer := 8;
        NA : string := "C:\My_Designs\projeto1\projeto06281\mram.txt";
        Tz : time := 2 ns;
        Twrite : time := 5 ns;
@@ -44,7 +44,7 @@ entity Ram is
        w : in std_logic;
 	   ender : in std_logic_vector(BE - 1 downto 0);
        pronto : out std_logic;
-       dadoOut : out std_logic_vector(BP - 1 downto 0)
+       dadoOut : out std_logic_vector(31 downto 0)
   );
 end Ram;
 
@@ -69,7 +69,7 @@ function fill_memory return tipo_memoria is
 		(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, -1, -1, -1, -1, -1, -1, -1, 10, 11, 12, 13, 14, 15);
 	file infile: text open read_mode is NA; -- Abre o arquivo para leitura
 	variable buff: line; 
-	variable addr_s: string ((integer(ceil(real(BE)/4.0)) + 1) downto 1); -- Digitos de endereço mais um espaço
+	variable addr_s: string ((integer(ceil(real(BE)/8.0)) + 1) downto 1); -- Digitos de endereço mais um espaço
 	variable data_s: string ((integer(ceil(real(BP)/4.0)) + 1) downto 1); -- ùltimo byte sempre tem um espaço separador
 	variable addr_1, pal_cnt: integer;
 	variable data: std_logic_vector((BP - 1) downto 0);
@@ -83,7 +83,7 @@ function fill_memory return tipo_memoria is
 			read(buff, pal_cnT); -- Leia o número de bytes da próxima linha
 			-- addr_1 := lookup(addr_s(4)) * 4096 + lookup(addr_s(3)) * 256 + lookup(addr_s(2)) * 16 + lookup(addr_s(1));
 			addr_1 := 0;
-			upreal := real(BE)/4.0;
+			upreal := real(BE)/8.0;
 			up := integer((ceil(upreal)));
 			--report "Valor teto = " & real'image(upreal) & " Endereco = " & integer'image(up);
 			for i in (up + 1) downto 2 loop
@@ -126,7 +126,7 @@ if enable = '1' then
 
 		case rw is
 			when "10" => -- Ciclo de Leitura
-				dadoOut <= Mram(endereco) after Tread;
+				dadoOut <= Mram(endereco)&Mram(endereco+1)&Mram(endereco+2)&Mram(endereco+3) after Tread;
 				pronto <= '1' after Tread;			
 			--	dadoOut <= x"FFFF" after Tread;	
 			--	pronto <= '0' after Tread;

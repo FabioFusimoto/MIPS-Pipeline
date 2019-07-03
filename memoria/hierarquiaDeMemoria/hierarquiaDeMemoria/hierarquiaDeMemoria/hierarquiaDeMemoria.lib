@@ -1,32 +1,35 @@
-timestamp=1562110724095
+timestamp=1562122530739
 
 [~A]
-ModifyID=551
+ModifyID=784
 Version=74
 
 [cachei]
-A/comportamental=21|./../src/CacheI.vhd|25|1*298684
-BinI32/comportamental=3*76231
-I=0*12090
-I/comportamental=0*134567
-M=11|0|vde|1562101761178|./../src/CacheI.vhd|0*3690*0xee5a8d2c743a0df9df063cbb666aa6424c8466e8|0*4260*0x23b75c12e3e89f2ef000564498faa8c2
-M/comportamental=21|0|vde|1562110724039|./../src/CacheI.vhd|0*126606*0x2b7a2d5e83a57c96596f4b335edfae13ddff1060|0*127029*0x20116f55b147878295aeff36dce7fc50
-NSymbols/cachei=NSymbols/CacheI 40|0|2*0
-R=./../src/CacheI.vhd|5
-Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|a7149862f791ed6c8490ebd9f67df6a28c123a6f4730938452f4e3e389c37ae4
-Version/comportamental=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|37d0518bbecbdaa130e9dbaa0dbb739560b343c555df2987bb9a98df7bdea66c7e6a8f07ee500a9b24b04cf5cd14eb6d
+A/cachei=+21|./../src/CacheI.vhd|50|1*730565
+A/comportamental=21|./../src/CacheI.vhd|48|1*884777
+BinI32/comportamental=3*209269
+I=0*326769
+I/comportamental=0*385775
+M=11|0|vde|1562121600913|./../src/CacheI.vhd|0*326118*0x23479e9b69038754aa8afcf8d19561969186bd00|0*326690*0x23b75c12e3e89f2ef000564498faa8c2
+M/cachei=M/CacheI 21|0|vde|1562121578508|./../src/CacheI.vhd|0*319152*0xab8ca35c5121c93f784d918dbd23b8a5ad5e8b6e|0*319289*0x20116f55b147878295aeff36dce7fc50
+M/comportamental=21|0|vde|1562122530688|./../src/CacheI.vhd|0*327002*0xd529b64daff42ed2551bfa8a5d1de7bea8738466|0*327425*0x20116f55b147878295aeff36dce7fc50
+NSymbols/cachei=NSymbols/CacheI 40|0|2*113358
+R=./../src/CacheI.vhd|28
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|a7149862f791ed6c8490ebd9f67df6a289cef73f689a2275a515302f2dba06e6
+Version/cachei=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|a7149862f791ed6c8490ebd9f67df6a25bc87a690a6cb82137ea106b383790b7
+Version/comportamental=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|37d0518bbecbdaa130e9dbaa0dbb739560b343c555df2987bb9a98df7bdea66c90b5ae17c5e7fa54912d9fee20c1ea3e
 
 [cacheieram]
-A/cacheieram=A/CacheIeRAM 24|.\..\src\CacheIeRAM.bde|10000|1*301728
-BinI32/cacheieram=3*77165
-I=0*91283
-I/cacheieram=I/CacheIeRAM 0*137378
-M=11|0|vde|1562106155616|./../compile/CacheIeRAM.vhd|0*90831*0x4930856bc75a98eb28992b28edb84819412b03b4|0*91192*0x23b75c12e3e89f2ef000564498faa8c2
-M/cacheieram=M/CacheIeRAM 21|0|vde|1562110724072|./../compile/CacheIeRAM.vhd|0*135635*0xa37ddc2decb4f6b7fc45396050ef4b1876bf0cb4|0*137273*0x20116f55b147878295aeff36dce7fc50
-NSymbols/cacheieram=NSymbols/CacheIeRAM 40|0|2*89949
+A/cacheieram=A/CacheIeRAM 24|.\..\src\CacheIeRAM.bde|10000|1*879947
+BinI32/cacheieram=3*208927
+I=0*332240
+I/cacheieram=I/CacheIeRAM 0*385392
+M=11|0|vde|1562121648841|./../compile/CacheIeRAM.vhd|0*331724*0x2f9509c95c024dd8aee0fdf03bc4d8f37edcb8e6|0*332149*0x23b75c12e3e89f2ef000564498faa8c2
+M/cacheieram=M/CacheIeRAM 21|0|vde|1562122530641|./../compile/CacheIeRAM.vhd|0*383671*0x552c52f37963fcfe2d9623089c769f01ad988c90|0*385287*0x20116f55b147878295aeff36dce7fc50
+NSymbols/cacheieram=NSymbols/CacheIeRAM 40|0|2*116705
 R=./../compile/CacheIeRAM.vhd|27
-Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|492640b48e28c6a36460dd79492a07cfcf46c3097449ef6f8558904691e6b35594d0ee3c736fac2a840b7024c50f8450
-Version/cacheieram=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|492640b48e28c6a36460dd79492a07cfcf46c3097449ef6f8558904691e6b3552706c26b2ab760c4adae966131c9155d
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|492640b48e28c6a36460dd79492a07cfcf46c3097449ef6f8558904691e6b3558f989ef145c2b19674a64a780126c20f
+Version/cacheieram=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|492640b48e28c6a36460dd79492a07cfcf46c3097449ef6f8558904691e6b35521165e04f6702746bfeb9cd0196bbb7c
 
 [fub2]
 A/cacheieram=A/CacheIeRAM 24|.\..\src\CacheIeRAM.bde|10000|1*41922
@@ -44,77 +47,77 @@ Version/cacheieram=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|492640
 NSymbols/fub4=NSymbols/Fub4 40|0|2*5911
 
 [ram]
-A/ram=A/Ram 21|./../src/RAM.vhd|51|1*290616
-BinI32/ram=3*73183
-I=0*13549
-I/ram=I/Ram 0*131675
-M=11|0|vde|1562080197893|./../src/RAM.vhd|0*0*0x09fbd17db4796cd64cc9e40528a42fd1a950415d|0*659*0x23b75c12e3e89f2ef000564498faa8c2
-M/ram=M/Ram 21|0|vde|1562110723969|./../src/RAM.vhd|0*1613*0xdb5d55257ebd29d4fb9e5076d4e7d94046dc2c0d|0*3610*0x20116f55b147878295aeff36dce7fc50
-NSymbols/ram=NSymbols/Ram 40|0|2*16386
+A/ram=A/Ram 21|./../src/Ram.vhd|51|1*886518
+BinI32/ram=3*209747
+I=0*182229
+I/ram=I/Ram 0*386023
+M=11|0|vde|1562117139620|./../src/RAM.vhd|0*181502*0xb4a0e07a1523fa9b535b6750d63a73ba83638977|0*182156*0x23b75c12e3e89f2ef000564498faa8c2
+M/ram=M/Ram 21|0|vde|1562122530712|./../src/Ram.vhd|0*368562*0xbda8286847110750134a7fd757c45676f999eb5d|0*370625*0x20116f55b147878295aeff36dce7fc50
+NSymbols/ram=NSymbols/Ram 40|0|2*128297
 R=./../src/RAM.vhd|30
-Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|a936fc2a703b3f48871772595baaafeb9d5a9656a0082454abebc62f12eadb8c
-Version/ram=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|a936fc2a703b3f48871772595baaafeb222c3028c246611e64f4c83837d486c2
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|a936fc2a703b3f48871772595baaafeb38a9c03e392a94d3760846fca1cee5ae
+Version/ram=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|a936fc2a703b3f48871772595baaafebc368c419625e95820d866ab1658f1ee9
 
 [tb_cachei]
-A/tb_cachei=A/TB_CacheI 24|.\..\src\TB_CacheI.bde|10000|1*300415
-BinI32/tb_cachei=3*76709
-I=0*14415
-I/tb_cachei=I/TB_CacheI 0*135317
-M=11|0|vde|1562103867565|./../compile/TB_CacheI.vhd|0*5262*0x05021a78d33af85af3ff53ed9d02566f224d642e|0*5683*0x23b75c12e3e89f2ef000564498faa8c2
-M/tb_cachei=M/TB_CacheI 21|0|vde|1562110724053|./../compile/TB_CacheI.vhd|0*134815*0x0a56d87b357e881df7bbb7c06d436f38f0664677|0*135215*0x20116f55b147878295aeff36dce7fc50
-NSymbols/tb_cachei=NSymbols/TB_CacheI 40|0|2*92497
+A/tb_cachei=A/TB_CacheI 24|.\..\src\TB_CacheI.bde|10000|1*876133
+BinI32/tb_cachei=3*208467
+I=0*225323
+I/tb_cachei=I/TB_CacheI 0*381925
+M=11|0|vde|1562117457186|./../compile/TB_CacheI.vhd|0*224813*0xc8e4e02ea1d46355406f06d9dec1ed6a868f978e|0*225234*0x23b75c12e3e89f2ef000564498faa8c2
+M/tb_cachei=M/TB_CacheI 21|0|vde|1562122530605|./../compile/TB_CacheI.vhd|0*381413*0x07f76b99a3edb64d12f457f83cad866067624b88|0*381823*0x20116f55b147878295aeff36dce7fc50
+NSymbols/tb_cachei=NSymbols/TB_CacheI 40|0|2*119254
 R=./../compile/TB_CacheI.vhd|27
-Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|3ce020715f67f2c7d9cdd812edb0b037610e12f1f13c4df7b5459574a270999e074f569ce81aab2cb7598bc514ba577a
-Version/tb_cachei=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|3ce020715f67f2c7d9cdd812edb0b037610e12f1f13c4df7b5459574a270999ec9c6b592b20d7e2bad033d1de80af978
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|3ce020715f67f2c7d9cdd812edb0b037610e12f1f13c4df7b5459574a270999e50e5aed2c35aaf53647d1244a96c23bc
+Version/tb_cachei=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|3ce020715f67f2c7d9cdd812edb0b037610e12f1f13c4df7b5459574a270999e46abc486a245a6c01fc2a24011f7189a
 
 [tb_ram]
-A/tb_ram=A/TB_RAM 24|.\..\src\TB_RAM.bde|10000|1*293790
-BinI32/tb_ram=3*75519
-I=0*15281
-I/tb_ram=I/TB_RAM 0*132485
-M=11|0|vde|1562080640735|./../compile/TB_RAM.vhd|0*732*0x21a49d843f486cb008441882bfbc17278460c806|0*1182*0x23b75c12e3e89f2ef000564498faa8c2
-M/tb_ram=M/TB_RAM 21|0|vde|1562110724000|./../compile/TB_RAM.vhd|0*131994*0x55f0f96098440be4678c03c40bc03aec16cfdd54|0*132392*0x20116f55b147878295aeff36dce7fc50
-NSymbols/tb_ram=NSymbols/TB_RAM 40|0|2*12409
+A/tb_ram=A/TB_RAM 24|.\..\src\TB_RAM.bde|10000|1*871169
+BinI32/tb_ram=3*207783
+I=0*185778
+I/tb_ram=I/TB_RAM 0*379342
+M=11|0|vde|1562117139649|./../compile/TB_RAM.vhd|0*185245*0x7cecb072feb0cc499cd854026f27a7dab1176c8b|0*185695*0x23b75c12e3e89f2ef000564498faa8c2
+M/tb_ram=M/TB_RAM 21|0|vde|1562122530552|./../compile/TB_RAM.vhd|0*378841*0xc08ce9c017bf1b327360b291aaa01d08d2be766a|0*379249*0x20116f55b147878295aeff36dce7fc50
+NSymbols/tb_ram=NSymbols/TB_RAM 40|0|2*98433
 R=./../compile/TB_RAM.vhd|27
-Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|7e1e31ef105246e4626f8571edec0a92efa7169f93d401cab13a09a9b231482b
-Version/tb_ram=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|7e1e31ef105246e4626f8571edec0a925701b08c8a094ba4b1777950131f2069
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|7e1e31ef105246e4626f8571edec0a9207ec71ab4379972f7b12b5431784af59
+Version/tb_ram=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|7e1e31ef105246e4626f8571edec0a929ebfe5cc266761ce01eec4051fc2a99e
 
 [testecachei]
-A/testecachei=A/testeCacheI 24|.\..\src\testeCacheI.bde|10000|1*306504
+A/testecachei=A/testeCacheI 24|.\..\src\testeCacheI.bde|10000|1*877466
 I=0*16026
-I/testecachei=I/testeCacheI 0*138725
+I/testecachei=I/testeCacheI 0*383280
 M=11|0|vde|1562103078980|./../compile/testeCacheI.vhd|0*4896*0x00ad7084e86af9a746d583eee78c515a0bb01cd2|0*5169*0x23b75c12e3e89f2ef000564498faa8c2
-M/testecachei=M/testeCacheI 21|0|vde|1562110724091|./../compile/testeCacheI.vhd|0*137688*0x9666976308d60f6b0d6b37017fbabedb67958306|0*138617*0x20116f55b147878295aeff36dce7fc50
+M/testecachei=M/testeCacheI 21|0|vde|1562122530625|./../compile/testeCacheI.vhd|0*382243*0x6636b3cd51517f528e5607bb0cc04a2af2b0c843|0*383172*0x20116f55b147878295aeff36dce7fc50
 R=./../compile/testeCacheI.vhd|27
 Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|2fad40cc1073b0376f4de4a5291cea990dbd8a477d396b39176049141e0c4cf8e51411a503332960617443317dbe1d42
-Version/testecachei=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|2fad40cc1073b0376f4de4a5291cea990dbd8a477d396b39176049141e0c4cf820cabdec6981af7d1e63deaed59c66aa
+Version/testecachei=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|2fad40cc1073b0376f4de4a5291cea990dbd8a477d396b39176049141e0c4cf8699ecbe3bf9cf289a7a326f2a8f13d03
 
 [testeram]
-A/testeram=A/testeRAM 24|.\..\src\testeRAM.bde|10000|1*295174
-BinI32/testeram=3*75986
+A/testeram=A/testeRAM 24|.\..\src\testeRAM.bde|10000|1*872573
+BinI32/testeram=3*208254
 I=0*16589
-I/testeram=I/testeRAM 0*134186
+I/testeram=I/testeRAM 0*381031
 M=11|0|vde|1562080966520|./../compile/testeRAM.vhd|0*1265*0xdfc02db08d4cb407ca3da432e85cb86fe3fd4b2b|0*1526*0x23b75c12e3e89f2ef000564498faa8c2
-M/testeram=M/testeRAM 21|0|vde|1562110724018|./../compile/testeRAM.vhd|0*132797*0x53feb52803540106eb1530c0e8b7bf9b6deec5b9|0*134087*0x20116f55b147878295aeff36dce7fc50
+M/testeram=M/testeRAM 21|0|vde|1562122530585|./../compile/testeRAM.vhd|0*379654*0x0232920f2b3006d7ba5ea78dc1662cbb3673482c|0*380932*0x20116f55b147878295aeff36dce7fc50
 NSymbols/testeram=NSymbols/testeRAM 40|0|2*15771
 R=./../compile/testeRAM.vhd|27
 Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|b9ec674b1a3be28e570dabc6ab7e28541096506f0a00bc334a610cd78bf011ddbdef6b8d91330b646d3278bd7754df89
-Version/testeram=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|b9ec674b1a3be28e570dabc6ab7e28541096506f0a00bc334a610cd78bf011ddaad4df6788646cc219aaeed7fd09f6e7
+Version/testeram=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|b9ec674b1a3be28e570dabc6ab7e28541096506f0a00bc334a610cd78bf011dd1a8c2d3362f573407f50f5b61364138b
 
 [~MFT]
-0=44|0hierarquiaDeMemoria.mgf|138725|118785
-1=9|1hierarquiaDeMemoria.mgf|306504|81684
-2=0|2hierarquiaDeMemoria.mgf|92497|73610
-3=12|3hierarquiaDeMemoria.mgf|77165|72830
+0=44|0hierarquiaDeMemoria.mgf|386023|365519
+1=9|1hierarquiaDeMemoria.mgf|886518|250716
+2=0|2hierarquiaDeMemoria.mgf|128297|110043
+3=12|3hierarquiaDeMemoria.mgf|209747|207430
 
 [~U]
-cachei=CacheI 11|0*11772||0x3
-cacheieram=CacheIeRAM 11|0*90599||0x7
+cachei=CacheI 11|0*325795||0x3
+cacheieram=CacheIeRAM 11|0*331491||0x7
 fub2=Fub2 11|0*12571||0x7
 fub4=Fub4 11|||0x3
-ram=Ram 11|0*13213||0x3
-tb_cachei=TB_CacheI 11|0*14183||0x7
-tb_ram=TB_RAM 11|0*15041||0x7
+ram=Ram 11|0*181165||0x3
+tb_cachei=TB_CacheI 11|0*224580||0x7
+tb_ram=TB_RAM 11|0*185006||0x7
 testecachei=testeCacheI 11|0*15898|
 testeram=testeRAM 11|0*16467||0x3
 

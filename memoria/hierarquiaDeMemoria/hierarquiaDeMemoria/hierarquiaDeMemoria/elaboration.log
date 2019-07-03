@@ -1,4 +1,4 @@
-Active-HDL 10.5.217.6767 2019-07-02 20:38:17
+Active-HDL 10.5.217.6767 2019-07-02 23:55:35
 
 Elaboration top modules:
 Architecture                  testeCacheI(testeCacheI)
@@ -10,8 +10,8 @@ Entity      | Architecture   | Library             | Info | Compiler Version    
 testeCacheI | testeCacheI    | hierarquiadememoria |      | 10.5.217.6767 (Windows) | -O3
 TB_CacheI   | TB_CacheI      | hierarquiadememoria |      | 10.5.217.6767 (Windows) | -O3
 CacheIeRAM  | CacheIeRAM     | hierarquiadememoria |      | 10.5.217.6767 (Windows) | -O3
-CacheI      | comportamental | hierarquiadememoria |      | 10.5.217.6767 (Windows) | -O3
 Ram         | Ram            | hierarquiadememoria |      | 10.5.217.6767 (Windows) | -O3
+CacheI      | comportamental | hierarquiadememoria |      | 10.5.217.6767 (Windows) | -O3
 ----------------------------------------------------------------------------------------------------------
 
 ----------------------------------------------------------------------------------------------------------

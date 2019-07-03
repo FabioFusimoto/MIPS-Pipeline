@@ -1,13 +1,36 @@
+-------------------------------------------------------------------------------
+--
+-- Title       : CacheI
+-- Design      : hierarquiaDeMemoria
+-- Author      : Fernanda Parodi
+-- Company     : USP
+--
+-------------------------------------------------------------------------------
+--
+-- File        : C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
+-- Generated   : Tue Jul  2 23:37:44 2019
+-- From        : interface description file
+-- By          : Itf2Vhdl ver. 1.22
+--
+-------------------------------------------------------------------------------
+--
+-- Description : 
+--
+-------------------------------------------------------------------------------
+
+--{{ Section below this comment is automatically maintained
+--   and may be overwritten
+--{entity {CacheI} architecture {CacheI}}
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.STD_LOGIC_ARITH.all;
 
 entity CacheI is
 	generic(
-		TAM_END : integer := 8;	  -- mudar para 16
-		TAM_DADO : integer := 16; -- mudar para 32
-		tam_linha : integer := 1 + 1 + 4*16;	--mudar para 1 + 2 + 16*32   
-		num_blocos : integer := 16 --mudar para 256
+		TAM_END : integer := 16;	  
+		TAM_DADO : integer := 32; 
+		tam_linha : integer := 1 + 2 + 16*32;   
+		num_blocos : integer := 256
 	);
 	
 	port(		 

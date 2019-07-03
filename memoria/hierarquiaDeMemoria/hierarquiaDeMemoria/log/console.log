@@ -1,1067 +1,18 @@
 # ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.1 [s].
-# Design Explorer: Shortcut to "C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria.aws" design added.
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_RAM.bde'.
-# DRC: TB_RAM.bde - 0 error(s), 0 warning(s)
-# DRC: DRC process completed in 2 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\TB_RAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_RAM.bde ...
-# Generation successful
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeRAM.bde'.
-# DRC: Warning: testeRAM.bde - 0 error(s), 2 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeRAM.bde ...
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# ELBREAD: Elaboration time 0.0 [s].
 acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/CacheI.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
 # Compile Entity "CacheI"
 # Compile Architecture "comportamental" of Entity "CacheI"
-# Error: COMP96_0019: CacheI.vhd : (45, 6): Keyword 'if' expected.
-# Error: COMP96_0015: CacheI.vhd : (45, 6): ';' expected.
-# Error: COMP96_0019: CacheI.vhd : (46, 5): Keyword 'process' expected.
-# Error: COMP96_0019: CacheI.vhd : (46, 19): Keyword 'end' expected.
-# Compile failure 4 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/CacheI.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/TB_CacheI.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_CacheI.bde'.
-# DRC: TB_CacheI.bde - 0 error(s), 0 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\TB_CacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_CacheI.bde ...
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# Error: COMP96_0078: TB_CacheI.bde(TB_CacheI.vhd) : (37, 10): Unknown identifier "dadoOut".
-# Error: COMP96_0078: TB_CacheI.bde(TB_CacheI.vhd) : (37, 19): Unknown identifier "pronto".
-# Error: COMP96_0348: TB_CacheI.bde(TB_CacheI.vhd) : (37, 10): Name on sensitivity list must denote a signal.
-# Error: COMP96_0348: TB_CacheI.bde(TB_CacheI.vhd) : (37, 19): Name on sensitivity list must denote a signal.
-# Error: COMP96_0078: TB_CacheI.bde(TB_CacheI.vhd) : (43, 2): Unknown identifier "enable".
-# Error: COMP96_0133: TB_CacheI.bde(TB_CacheI.vhd) : (43, 2): Cannot find object declaration.
-# Error: COMP96_0078: TB_CacheI.bde(TB_CacheI.vhd) : (44, 2): Unknown identifier "w".
-# Error: COMP96_0133: TB_CacheI.bde(TB_CacheI.vhd) : (44, 2): Cannot find object declaration.
-# Error: COMP96_0078: TB_CacheI.bde(TB_CacheI.vhd) : (45, 2): Unknown identifier "endereco_in".
-# Error: COMP96_0133: TB_CacheI.bde(TB_CacheI.vhd) : (45, 2): Cannot find object declaration.
-# Error: COMP96_0078: TB_CacheI.bde(TB_CacheI.vhd) : (56, 4): Unknown identifier "Clock".
-# Error: COMP96_0133: TB_CacheI.bde(TB_CacheI.vhd) : (56, 4): Cannot find object declaration.
-# Compile failure 12 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_CacheI.bde'.
-# DRC: TB_CacheI.bde - 0 error(s), 0 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\TB_CacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_CacheI.bde ...
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# Error: COMP96_0078: TB_CacheI.bde(TB_CacheI.vhd) : (37, 10): Unknown identifier "dadoOut".
-# Error: COMP96_0078: TB_CacheI.bde(TB_CacheI.vhd) : (37, 19): Unknown identifier "pronto".
-# Error: COMP96_0348: TB_CacheI.bde(TB_CacheI.vhd) : (37, 10): Name on sensitivity list must denote a signal.
-# Error: COMP96_0348: TB_CacheI.bde(TB_CacheI.vhd) : (37, 19): Name on sensitivity list must denote a signal.
-# Error: COMP96_0078: TB_CacheI.bde(TB_CacheI.vhd) : (43, 2): Unknown identifier "enable".
-# Error: COMP96_0133: TB_CacheI.bde(TB_CacheI.vhd) : (43, 2): Cannot find object declaration.
-# Error: COMP96_0078: TB_CacheI.bde(TB_CacheI.vhd) : (44, 2): Unknown identifier "w".
-# Error: COMP96_0133: TB_CacheI.bde(TB_CacheI.vhd) : (44, 2): Cannot find object declaration.
-# Error: COMP96_0078: TB_CacheI.bde(TB_CacheI.vhd) : (45, 2): Unknown identifier "endereco_in".
-# Error: COMP96_0133: TB_CacheI.bde(TB_CacheI.vhd) : (45, 2): Cannot find object declaration.
-# Error: COMP96_0078: TB_CacheI.bde(TB_CacheI.vhd) : (57, 4): Unknown identifier "Clock".
-# Error: COMP96_0133: TB_CacheI.bde(TB_CacheI.vhd) : (57, 4): Cannot find object declaration.
-# Compile failure 12 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/TB_CacheI.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_CacheI.bde'.
-# DRC: TB_CacheI.bde - 0 error(s), 0 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\TB_CacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_CacheI.bde ...
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# Error: COMP96_0078: TB_CacheI.bde(TB_CacheI.vhd) : (42, 4): Unknown identifier "Clock".
-# Error: COMP96_0133: TB_CacheI.bde(TB_CacheI.vhd) : (42, 4): Cannot find object declaration.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_CacheI.bde'.
-# DRC: TB_CacheI.bde - 0 error(s), 0 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\TB_CacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_CacheI.bde ...
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# Error: COMP96_0078: TB_CacheI.bde(TB_CacheI.vhd) : (37, 10): Unknown identifier "dadoOut".
-# Error: COMP96_0078: TB_CacheI.bde(TB_CacheI.vhd) : (37, 19): Unknown identifier "pronto".
-# Error: COMP96_0348: TB_CacheI.bde(TB_CacheI.vhd) : (37, 10): Name on sensitivity list must denote a signal.
-# Error: COMP96_0348: TB_CacheI.bde(TB_CacheI.vhd) : (37, 19): Name on sensitivity list must denote a signal.
-# Error: COMP96_0078: TB_CacheI.bde(TB_CacheI.vhd) : (43, 2): Unknown identifier "enable".
-# Error: COMP96_0133: TB_CacheI.bde(TB_CacheI.vhd) : (43, 2): Cannot find object declaration.
-# Error: COMP96_0078: TB_CacheI.bde(TB_CacheI.vhd) : (44, 2): Unknown identifier "w".
-# Error: COMP96_0133: TB_CacheI.bde(TB_CacheI.vhd) : (44, 2): Cannot find object declaration.
-# Error: COMP96_0078: TB_CacheI.bde(TB_CacheI.vhd) : (45, 2): Unknown identifier "endereco_in".
-# Error: COMP96_0133: TB_CacheI.bde(TB_CacheI.vhd) : (45, 2): Cannot find object declaration.
-# Error: COMP96_0078: TB_CacheI.bde(TB_CacheI.vhd) : (57, 4): Unknown identifier "Clock".
-# Error: COMP96_0133: TB_CacheI.bde(TB_CacheI.vhd) : (57, 4): Cannot find object declaration.
-# Compile failure 12 Errors 0 Warnings  Analysis time :  94.0 [ms]
-# Warning: Unable automatically update sensitivity list of clk process. Special comment was not found in process code.
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/TB_CacheI.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_CacheI.bde'.
-# DRC: Error: TB_CacheI.bde - 1 error(s), 0 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Warning: Unable automatically update sensitivity list of clk process. Special comment was not found in process code.
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/TB_CacheI.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_CacheI.bde'.
-# DRC: TB_CacheI.bde - 0 error(s), 0 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\TB_CacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_CacheI.bde ...
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-# Symbol: Fub1 has been replaced by symbol: TB_CacheI
-# Symbol: Fub1 has been replaced by symbol: Ram
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/CacheIeRAM.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Warning: CacheIeRAM.bde - 0 error(s), 6 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\CacheIeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde ...
-# Conversion functions added: 1
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\..\compile\CacheIeRAM.vhd
-# Compile Entity "Fub2"
-# Compile Architecture "CacheIeRAM" of Entity "Fub2"
-# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_CacheI.bde'.
-# DRC: TB_CacheI.bde - 0 error(s), 0 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\TB_CacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_CacheI.bde ...
-# Generation successful
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde'.
-# DRC: Warning: testeCacheI.bde - 0 error(s), 3 warning(s)
-# DRC: DRC process completed in 2 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeCacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde ...
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# File: .\..\compile\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# File: .\..\compile\CacheIeRAM.vhd
-# Compile Entity "Fub2"
-# Compile Architecture "CacheIeRAM" of Entity "Fub2"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/testeCacheI.bde
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\..\compile\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/CacheIeRAM.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Warning: CacheIeRAM.bde - 0 error(s), 7 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\CacheIeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde ...
-# Conversion functions added: 1
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\..\compile\CacheIeRAM.vhd
-# Compile Entity "Fub2"
-# Compile Architecture "CacheIeRAM" of Entity "Fub2"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/CacheIeRAM.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Warning: CacheIeRAM.bde - 0 error(s), 7 warning(s)
-# DRC: DRC process completed in 2 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\CacheIeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde ...
-# Conversion functions added: 1
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\..\compile\CacheIeRAM.vhd
-# Compile Entity "Fub2"
-# Compile Architecture "CacheIeRAM" of Entity "Fub2"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/testeCacheI.bde
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\..\compile\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
 # Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde'.
-# DRC: Warning: testeCacheI.bde - 0 error(s), 5 warning(s)
-# DRC: DRC process completed in 2 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeCacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde ...
-# Generation successful
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Error: CacheIeRAM.bde - 1 error(s), 7 warning(s)
-# DRC: DRC process completed in 2 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# File: .\..\compile\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Warning: ELAB1_0026: testeCacheI.bde(testeCacheI.vhd) : (86, 0): There is no default binding for component "Fub2". (Port "endereco_in" is not on the entity).
-# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_CacheI.bde'.
-# DRC: TB_CacheI.bde - 0 error(s), 0 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\TB_CacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_CacheI.bde ...
-# Generation successful
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Error: CacheIeRAM.bde - 1 error(s), 7 warning(s)
-# DRC: DRC process completed in 2 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# File: .\..\compile\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Warning: ELAB1_0026: testeCacheI.bde(testeCacheI.vhd) : (65, 0): There is no default binding for component "TB_CacheI". (Port "R" is not on the entity).
-# Warning: ELAB1_0026: testeCacheI.bde(testeCacheI.vhd) : (86, 0): There is no default binding for component "Fub2". (Port "endereco_in" is not on the entity).
-# Compile success 0 Errors 2 Warnings  Analysis time :  94.0 [ms]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Error: CacheIeRAM.bde - 1 error(s), 6 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# File: .\..\compile\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Warning: ELAB1_0026: testeCacheI.bde(testeCacheI.vhd) : (65, 0): There is no default binding for component "TB_CacheI". (Port "R" is not on the entity).
-# Warning: ELAB1_0026: testeCacheI.bde(testeCacheI.vhd) : (86, 0): There is no default binding for component "Fub2". (Port "endereco_in" is not on the entity).
-# Compile success 0 Errors 2 Warnings  Analysis time :  0.1 [s]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde'.
-# DRC: Warning: testeCacheI.bde - 0 error(s), 1 warning(s)
-# DRC: DRC process completed in 2 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeCacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde ...
-# Generation successful
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Error: CacheIeRAM.bde - 1 error(s), 6 warning(s)
-# DRC: DRC process completed in 2 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# File: .\..\compile\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Warning: ELAB1_0026: testeCacheI.bde(testeCacheI.vhd) : (78, 0): There is no default binding for component "Fub2". (Port "endereco_in" is not on the entity).
-# Compile success 0 Errors 1 Warnings  Analysis time :  94.0 [ms]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/compile/CacheIeRAM.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\CacheIeRAM.vhd
-# Compile Entity "Fub2"
-# Compile Architecture "CacheIeRAM" of Entity "Fub2"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/compile/testeCacheI.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Warning: ELAB1_0026: testeCacheI.bde(testeCacheI.vhd) : (78, 0): There is no default binding for component "Fub2". (Port "endereco_in" is not on the entity).
-# Compile success 0 Errors 1 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde'.
-# DRC: Warning: testeCacheI.bde - 0 error(s), 1 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeCacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde ...
-# Generation successful
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Error: CacheIeRAM.bde - 1 error(s), 6 warning(s)
-# DRC: DRC process completed in 2 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# File: .\..\compile\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Warning: ELAB1_0026: testeCacheI.bde(testeCacheI.vhd) : (78, 0): There is no default binding for component "CacheIeRam". (No entity named "CacheIeRam" was found).
-# Compile success 0 Errors 1 Warnings  Analysis time :  94.0 [ms]
-# Fub names have changed:
-#  Ram -> Fub3
-# Symbol: CacheIeRam has been updated from library
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde'.
-# DRC: Warning: testeCacheI.bde - 0 error(s), 4 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeCacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde ...
-# Generation successful
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Error: CacheIeRAM.bde - 1 error(s), 7 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# File: .\..\compile\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Warning: ELAB1_0026: testeCacheI.bde(testeCacheI.vhd) : (84, 0): There is no default binding for component "CacheIeRam". (No entity named "CacheIeRam" was found).
-# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde'.
-# DRC: Warning: testeCacheI.bde - 0 error(s), 2 warning(s)
-# DRC: DRC process completed in 2 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeCacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde ...
-# Generation successful
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Error: CacheIeRAM.bde - 1 error(s), 7 warning(s)
-# DRC: DRC process completed in 2 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# File: .\..\compile\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Warning: ELAB1_0026: testeCacheI.bde(testeCacheI.vhd) : (78, 0): There is no default binding for component "CacheIeRam". (No entity named "CacheIeRam" was found).
-# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/CacheIeRAM.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Error: CacheIeRAM.bde - 1 error(s), 7 warning(s)
-# DRC: DRC process completed in 2 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Error: CacheIeRAM.bde - 1 error(s), 7 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# File: .\..\compile\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Warning: ELAB1_0026: testeCacheI.bde(testeCacheI.vhd) : (78, 0): There is no default binding for component "CacheIeRam". (No entity named "CacheIeRam" was found).
-# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde'.
-# DRC: Warning: testeCacheI.bde - 0 error(s), 2 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeCacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde ...
-# Generation successful
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Error: CacheIeRAM.bde - 1 error(s), 7 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# File: .\..\compile\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Warning: ELAB1_0026: testeCacheI.bde(testeCacheI.vhd) : (78, 0): There is no default binding for component "CacheIeRam". (No entity named "CacheIeRam" was found).
-# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/CacheIeRAM.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Error: CacheIeRAM.bde - 1 error(s), 7 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/CacheIeRAM.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Error: CacheIeRAM.bde - 1 error(s), 7 warning(s)
-# DRC: DRC process completed in 2 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_CacheI.bde'.
-# DRC: TB_CacheI.bde - 0 error(s), 0 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\TB_CacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_CacheI.bde ...
-# Generation successful
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde'.
-# DRC: Warning: testeCacheI.bde - 0 error(s), 5 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeCacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde ...
-# Generation successful
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Warning: CacheIeRAM.bde - 0 error(s), 7 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\CacheIeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde ...
-# Conversion functions added: 2
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# File: .\..\compile\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Warning: ELAB1_0026: testeCacheI.bde(testeCacheI.vhd) : (73, 0): There is no default binding for component "TB_CacheI". (Port "bit_leitura" is not on the entity).
-# Warning: ELAB1_0026: testeCacheI.bde(testeCacheI.vhd) : (83, 0): There is no default binding for component "CacheIeRam". (No entity named "CacheIeRam" was found).
-# File: .\..\compile\CacheIeRAM.vhd
-# Compile Entity "Fub2"
-# Compile Architecture "CacheIeRAM" of Entity "Fub2"
-# Warning: ELAB1_0026: CacheIeRAM.bde(CacheIeRAM.vhd) : (109, 0): There is no default binding for component "Fub3". (No entity named "Fub3" was found).
-# Compile success 0 Errors 3 Warnings  Analysis time :  0.1 [s]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/compile/CacheIeRAM.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\CacheIeRAM.vhd
-# Compile Entity "Fub2"
-# Compile Architecture "CacheIeRAM" of Entity "Fub2"
-# Warning: ELAB1_0026: CacheIeRAM.bde(CacheIeRAM.vhd) : (109, 0): There is no default binding for component "Fub3". (No entity named "Fub3" was found).
-# Compile success 0 Errors 1 Warnings  Analysis time :  32.0 [ms]
-# Symbol: CacheIeRam has been updated from library
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde'.
-# DRC: Warning: testeCacheI.bde - 0 error(s), 4 warning(s)
-# DRC: DRC process completed in 2 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeCacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde ...
-# Generation successful
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Warning: CacheIeRAM.bde - 0 error(s), 7 warning(s)
-# DRC: DRC process completed in 2 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\CacheIeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde ...
-# Conversion functions added: 2
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# File: .\..\compile\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Warning: ELAB1_0026: testeCacheI.bde(testeCacheI.vhd) : (72, 0): There is no default binding for component "TB_CacheI". (Port "bit_leitura" is not on the entity).
-# Warning: ELAB1_0026: testeCacheI.bde(testeCacheI.vhd) : (82, 0): There is no default binding for component "CacheIeRam". (No entity named "CacheIeRam" was found).
-# File: .\..\compile\CacheIeRAM.vhd
-# Compile Entity "Fub2"
-# Compile Architecture "CacheIeRAM" of Entity "Fub2"
-# Warning: ELAB1_0026: CacheIeRAM.bde(CacheIeRAM.vhd) : (109, 0): There is no default binding for component "Fub3". (No entity named "Fub3" was found).
-# Compile success 0 Errors 3 Warnings  Analysis time :  0.1 [s]
-# Symbol: Fub3 has been replaced by symbol: Ram
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Warning: CacheIeRAM.bde - 0 error(s), 6 warning(s)
-# DRC: DRC process completed in 2 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\CacheIeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde ...
-# Conversion functions added: 2
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# File: .\..\compile\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Warning: ELAB1_0026: testeCacheI.bde(testeCacheI.vhd) : (72, 0): There is no default binding for component "TB_CacheI". (Port "bit_leitura" is not on the entity).
-# Warning: ELAB1_0026: testeCacheI.bde(testeCacheI.vhd) : (82, 0): There is no default binding for component "CacheIeRam". (No entity named "CacheIeRam" was found).
-# File: .\..\compile\CacheIeRAM.vhd
-# Compile Entity "Fub2"
-# Compile Architecture "CacheIeRAM" of Entity "Fub2"
-# Compile success 0 Errors 2 Warnings  Analysis time :  0.1 [s]
-# Fub names have changed:
-#  Ram -> Fub4
-# Symbol: CacheIeRam has been updated from library
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde'.
-# DRC: Warning: testeCacheI.bde - 0 error(s), 4 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeCacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde ...
-# Generation successful
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Warning: CacheIeRAM.bde - 0 error(s), 7 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\CacheIeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde ...
-# Conversion functions added: 2
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# File: .\..\compile\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Warning: ELAB1_0026: testeCacheI.bde(testeCacheI.vhd) : (72, 0): There is no default binding for component "TB_CacheI". (Port "bit_leitura" is not on the entity).
-# Warning: ELAB1_0026: testeCacheI.bde(testeCacheI.vhd) : (82, 0): There is no default binding for component "CacheIeRam". (No entity named "CacheIeRam" was found).
-# File: .\..\compile\CacheIeRAM.vhd
-# Compile Entity "Fub2"
-# Compile Architecture "CacheIeRAM" of Entity "Fub2"
-# Warning: ELAB1_0026: CacheIeRAM.bde(CacheIeRAM.vhd) : (109, 0): There is no default binding for component "Fub4". (No entity named "Fub4" was found).
-# Compile success 0 Errors 3 Warnings  Analysis time :  0.1 [s]
-# Symbol: Fub4 has been replaced by symbol: Ram
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/CacheIeRAM.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Warning: CacheIeRAM.bde - 0 error(s), 6 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\CacheIeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde ...
-# Conversion functions added: 2
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\..\compile\CacheIeRAM.vhd
-# Compile Entity "Fub2"
-# Compile Architecture "CacheIeRAM" of Entity "Fub2"
-# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
-# Symbol: CacheIeRam has been updated from library
-# Symbol: Fub1 has been replaced by symbol: Fub2
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde'.
-# DRC: Warning: testeCacheI.bde - 0 error(s), 2 warning(s)
-# DRC: DRC process completed in 2 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeCacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde ...
-# Generation successful
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Warning: CacheIeRAM.bde - 0 error(s), 6 warning(s)
-# DRC: DRC process completed in 2 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\CacheIeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde ...
-# Conversion functions added: 2
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# File: .\..\compile\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Warning: ELAB1_0026: testeCacheI.bde(testeCacheI.vhd) : (74, 0): There is no default binding for component "CacheIeRAM". (No entity named "CacheIeRAM" was found).
-# File: .\..\compile\CacheIeRAM.vhd
-# Compile Entity "Fub2"
-# Compile Architecture "CacheIeRAM" of Entity "Fub2"
-# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.7 [s].
-asim -O5 +access +r +m+testeCacheI testeCacheI testeCacheI
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.5 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELBREAD: Warning: ELBREAD_0037 testeCacheI.vhd (74): Component /testeCacheI/U2 : CacheIeRAM not bound.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6172 kB (elbread=1280 elab2=4754 kernel=137 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\wave.asdb
-#  18:52, terça-feira, 2 de julho de 2019
-#  Simulation has been initialized
-# 5 signal(s) traced.
-# Waveform file 'untitled.awc' connected to 'C:/Users/Fernanda/Documents/GitHub/MIPS-Pipeline/memoria/hierarquiaDeMemoria/hierarquiaDeMemoria/src/wave.asdb'.
-run
-endsim
-# KERNEL: stopped at time: 4309045 ns
-# VSIM: Simulation has finished.
-# Symbol: CacheIeRAM has been updated from library
-# Symbol: CacheIeRAM has been updated from library
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/CacheIeRAM.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Warning: CacheIeRAM.bde - 0 error(s), 6 warning(s)
-# DRC: DRC process completed in 2 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\CacheIeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde ...
-# Conversion functions added: 2
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\..\compile\CacheIeRAM.vhd
-# Compile Entity "Fub2"
-# Compile Architecture "CacheIeRAM" of Entity "Fub2"
-# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/testeCacheI.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde'.
-# DRC: Warning: testeCacheI.bde - 0 error(s), 2 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeCacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde ...
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\..\compile\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Warning: ELAB1_0026: testeCacheI.bde(testeCacheI.vhd) : (74, 0): There is no default binding for component "CacheIeRAM". (No entity named "CacheIeRAM" was found).
-# Compile success 0 Errors 1 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Warning: CacheIeRAM.bde - 0 error(s), 10 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\CacheIeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde ...
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# File: .\..\compile\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Warning: ELAB1_0026: testeCacheI.bde(testeCacheI.vhd) : (74, 0): There is no default binding for component "CacheIeRAM". (No entity named "CacheIeRAM" was found).
-# File: .\..\compile\CacheIeRAM.vhd
-# Compile Entity "CacheIeRAM"
-# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
-# Compile success 0 Errors 1 Warnings  Analysis time :  0.2 [s]
-asim -O5 +access +r +m+testeCacheI testeCacheI testeCacheI
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: Entity hierarquiadememoria.CacheIeRAM has been compiled after architecture hierarquiadememoria.testeCacheI(testeCacheI) that instantiates and binds this entity at simulation initialization. Recompile the source files in the correct order to perform the binding operation during compilation and simultaneously reduce the time required to initialize the simulation.
-# ELBREAD: Warning: The contents of entity 'CacheIeRAM' instantiated in architecture 'testeCacheI' differ from the contents available during the compilation of this architecture.
-# ELBREAD: Elaboration time 0.2 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6044 kB (elbread=1280 elab2=4626 kernel=137 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\wave.asdb
-#  18:57, terça-feira, 2 de julho de 2019
-#  Simulation has been initialized
-# 5 signal(s) traced.
-# Waveform file 'untitled.awc' connected to 'C:/Users/Fernanda/Documents/GitHub/MIPS-Pipeline/memoria/hierarquiaDeMemoria/hierarquiaDeMemoria/src/wave.asdb'.
-run
-endsim
-# KERNEL: stopped at time: 6443440 ns
-# VSIM: Simulation has finished.
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde'.
-# DRC: Warning: testeCacheI.bde - 0 error(s), 6 warning(s)
-# DRC: DRC process completed in 2 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeCacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde ...
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# File: .\..\compile\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# File: .\..\compile\CacheIeRAM.vhd
-# Compile Entity "CacheIeRAM"
-# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde'.
-# DRC: Warning: testeCacheI.bde - 0 error(s), 3 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeCacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde ...
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# File: .\..\compile\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Error: ELAB1_0022: testeCacheI.bde(testeCacheI.vhd) : (74, 0): Incompatible modes for port "endereco_in".
-# Error: ELAB1_0028: testeCacheI.bde(testeCacheI.vhd) : (74, 0): Entity port length is 8. data_out length is 16.
-# File: .\..\compile\CacheIeRAM.vhd
-# Compile Entity "CacheIeRAM"
-# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
-# Compile failure 2 Errors 0 Warnings  Analysis time :  0.1 [s]
-# Symbol: Fub1 has been replaced by symbol: TB_CacheI
-# Warning: Symbol CacheIeRAM has been overwritten by fub CacheIeRAM.
-# Symbol: Fub3 has been replaced by symbol: CacheIeRAM
 acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/CacheIeRAM.bde $dsn/src/testeCacheI.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_CacheI.bde'.
-# DRC: TB_CacheI.bde - 0 error(s), 0 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\TB_CacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_CacheI.bde ...
-# Generation successful
 # DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Warning: CacheIeRAM.bde - 0 error(s), 10 warning(s)
-# DRC: DRC process completed in 1 second(s).
+# DRC: Warning: CacheIeRAM.bde - 0 error(s), 7 warning(s)
+# DRC: DRC process completed in 2 second(s).
 # DRC: The results have been written to the log file. Double click on this line to view the log.
 # Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\CacheIeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde ...
-# Generation successful
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde'.
-# DRC: Warning: testeCacheI.bde - 0 error(s), 1 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeCacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde ...
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# File: .\..\compile\CacheIeRAM.vhd
-# Compile Entity "CacheIeRAM"
-# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
-# File: .\..\compile\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+testeCacheI testeCacheI testeCacheI
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6044 kB (elbread=1280 elab2=4626 kernel=137 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\wave.asdb
-#  19:02, terça-feira, 2 de julho de 2019
-#  Simulation has been initialized
-# 5 signal(s) traced.
-# Waveform file 'untitled.awc' connected to 'C:/Users/Fernanda/Documents/GitHub/MIPS-Pipeline/memoria/hierarquiaDeMemoria/hierarquiaDeMemoria/src/wave.asdb'.
-run
-endsim
-# KERNEL: stopped at time: 5202965 ns
-# VSIM: Simulation has finished.
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/CacheIeRAM.bde $dsn/src/testeCacheI.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde'.
-# DRC: Warning: testeCacheI.bde - 0 error(s), 1 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeCacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde ...
+# Conversion functions added: 2
 # Generation successful
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
@@ -1097,76 +48,13 @@ asim -O5 +access +r +m+testeCacheI testeCacheI testeCacheI
 # KERNEL: Time resolution set to 1ps.
 # ELAB2: Elaboration final pass...
 # ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6044 kB (elbread=1280 elab2=4626 kernel=137 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\wave.asdb
-#  19:04, terça-feira, 2 de julho de 2019
-#  Simulation has been initialized
-# 5 signal(s) traced.
-# Waveform file 'untitled.awc' connected to 'C:/Users/Fernanda/Documents/GitHub/MIPS-Pipeline/memoria/hierarquiaDeMemoria/hierarquiaDeMemoria/src/wave.asdb'.
-run
-endsim
-# KERNEL: stopped at time: 3458920 ns
-# VSIM: Simulation has finished.
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/CacheIeRAM.bde $dsn/src/testeCacheI.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Warning: CacheIeRAM.bde - 0 error(s), 6 warning(s)
-# DRC: DRC process completed in 2 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\CacheIeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde ...
-# Conversion functions added: 2
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# File: .\..\compile\CacheIeRAM.vhd
-# Compile Entity "CacheIeRAM"
-# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
-# File: .\..\compile\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+testeCacheI testeCacheI testeCacheI
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Fatal Error: ELAB2_0007 CacheIeRAM.vhd (98): Length of actual parameter (8) does not match the length of formal parameter "data_in" (16) (from component).
+# ELAB2: Fatal Error: ELAB2_0007 CacheIeRAM.vhd (98): Length of actual parameter (32) does not match the length of formal parameter "data_in" (16) (from component).
 # ELAB2: Last instance before error: /testeCacheI/U2/U1
 # KERNEL: Error: E8005 : Kernel process initialization failed.
 # VSIM: Error: Simulation initialization failed.
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/CacheIeRAM.bde $dsn/src/testeCacheI.bde
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde
 # DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Warning: CacheIeRAM.bde - 0 error(s), 6 warning(s)
+# DRC: Warning: CacheIeRAM.bde - 0 error(s), 9 warning(s)
 # DRC: DRC process completed in 2 second(s).
 # DRC: The results have been written to the log file. Double click on this line to view the log.
 # Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\CacheIeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde ...
@@ -1188,36 +76,24 @@ acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RA
 # File: .\..\compile\TB_CacheI.vhd
 # Compile Entity "TB_CacheI"
 # Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# File: .\..\compile\CacheIeRAM.vhd
-# Compile Entity "CacheIeRAM"
-# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
 # File: .\..\compile\testeCacheI.vhd
 # Compile Entity "testeCacheI"
 # Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+# File: .\..\compile\CacheIeRAM.vhd
+# Compile Entity "CacheIeRAM"
+# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
 asim -O5 +access +r +m+testeCacheI testeCacheI testeCacheI
 # ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Fatal Error: ELAB2_0007 CacheIeRAM.vhd (98): Length of actual parameter (8) does not match the length of formal parameter "data_out" (16) (from component).
-# ELAB2: Last instance before error: /testeCacheI/U2/U1
-# KERNEL: Error: E8005 : Kernel process initialization failed.
-# VSIM: Error: Simulation initialization failed.
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/CacheIeRAM.bde $dsn/src/testeCacheI.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Warning: CacheIeRAM.bde - 0 error(s), 7 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\CacheIeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde ...
-# Conversion functions added: 2
-# Generation successful
+# ELBREAD: Error: The contents of entity 'hierarquiadememoria.cacheieram' instantiated in architecture 'testeCacheI:testeCacheI' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# Error: VSIM: cannot select specified top-level
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: The contents of entity 'hierarquiadememoria.cacheieram' instantiated in architecture 'testeCacheI:testeCacheI' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
 # Compile Entity "Ram"
@@ -1234,105 +110,28 @@ acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RA
 # File: .\..\compile\TB_CacheI.vhd
 # Compile Entity "TB_CacheI"
 # Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# File: .\..\compile\CacheIeRAM.vhd
-# Compile Entity "CacheIeRAM"
-# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
-# Error: COMP96_0664: CacheIeRAM.bde(CacheIeRAM.vhd) : (104, 29): Value 15 out of range 7 downto 0.
 # File: .\..\compile\testeCacheI.vhd
 # Compile Entity "testeCacheI"
 # Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Compile failure 1 Errors 0 Warnings  Analysis time :  78.0 [ms]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/CacheIeRAM.bde $dsn/src/testeCacheI.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Warning: CacheIeRAM.bde - 0 error(s), 7 warning(s)
-# DRC: DRC process completed in 2 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\CacheIeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde ...
-# Conversion functions added: 2
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
+# Error: ELAB1_0028: testeCacheI.bde(testeCacheI.vhd) : (74, 0): Entity port length is 33. data_out length is 32.
 # File: .\..\compile\CacheIeRAM.vhd
 # Compile Entity "CacheIeRAM"
 # Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
-# Error: COMP96_0664: CacheIeRAM.bde(CacheIeRAM.vhd) : (104, 29): Value 15 out of range 7 downto 0.
-# File: .\..\compile\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Compile failure 1 Errors 0 Warnings  Analysis time :  62.0 [ms]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/CacheIeRAM.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Warning: CacheIeRAM.bde - 0 error(s), 7 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\CacheIeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde ...
-# Conversion functions added: 2
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\..\compile\CacheIeRAM.vhd
-# Compile Entity "CacheIeRAM"
-# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
-# Error: COMP96_0664: CacheIeRAM.bde(CacheIeRAM.vhd) : (104, 29): Value 15 out of range 7 downto 0.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/CacheIeRAM.bde $dsn/src/testeCacheI.bde
-# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
-# DRC: Warning: CacheIeRAM.bde - 0 error(s), 6 warning(s)
-# DRC: DRC process completed in 2 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\CacheIeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde ...
-# Conversion functions added: 2
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# File: .\..\compile\CacheIeRAM.vhd
-# Compile Entity "CacheIeRAM"
-# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
-# File: .\..\compile\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Error: ELAB1_0028: testeCacheI.bde(testeCacheI.vhd) : (74, 0): Entity port length is 16. data_out length is 8.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  62.0 [ms]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/CacheIeRAM.bde
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\..\compile\CacheIeRAM.vhd
-# Compile Entity "CacheIeRAM"
-# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/CacheIeRAM.bde $dsn/src/testeCacheI.bde
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde
 # DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde'.
-# DRC: Warning: testeCacheI.bde - 0 error(s), 2 warning(s)
+# DRC: testeCacheI.bde - 0 error(s), 0 warning(s)
 # DRC: DRC process completed in 1 second(s).
 # DRC: The results have been written to the log file. Double click on this line to view the log.
 # Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeCacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde ...
 # Generation successful
+# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
+# DRC: Warning: CacheIeRAM.bde - 0 error(s), 9 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\CacheIeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde ...
+# Conversion functions added: 2
+# Generation successful
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
 # Compile Entity "Ram"
@@ -1349,15 +148,15 @@ acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RA
 # File: .\..\compile\TB_CacheI.vhd
 # Compile Entity "TB_CacheI"
 # Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# File: .\..\compile\CacheIeRAM.vhd
-# Compile Entity "CacheIeRAM"
-# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
 # File: .\..\compile\testeCacheI.vhd
 # Compile Entity "testeCacheI"
 # Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Error: ELAB1_0028: testeCacheI.bde(testeCacheI.vhd) : (74, 0): Entity port length is 16. data_out length is 8.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  62.0 [ms]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/CacheIeRAM.bde $dsn/src/testeCacheI.bde
+# Error: ELAB1_0028: testeCacheI.bde(testeCacheI.vhd) : (74, 0): Entity port length is 33. data_out length is 32.
+# File: .\..\compile\CacheIeRAM.vhd
+# Compile Entity "CacheIeRAM"
+# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/testeCacheI.bde
 # DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde'.
 # DRC: testeCacheI.bde - 0 error(s), 0 warning(s)
 # DRC: DRC process completed in 2 second(s).
@@ -1365,165 +164,12 @@ acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RA
 # Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeCacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde ...
 # Generation successful
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# File: .\..\compile\CacheIeRAM.vhd
-# Compile Entity "CacheIeRAM"
-# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
 # File: .\..\compile\testeCacheI.vhd
 # Compile Entity "testeCacheI"
 # Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+testeCacheI testeCacheI testeCacheI
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  TOP instance.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 7248 kB (elbread=1280 elab2=5830 kernel=138 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\wave.asdb
-#  19:26, terça-feira, 2 de julho de 2019
-#  Simulation has been initialized
-# 5 signal(s) traced.
-# Waveform file 'untitled.awc' connected to 'C:/Users/Fernanda/Documents/GitHub/MIPS-Pipeline/memoria/hierarquiaDeMemoria/hierarquiaDeMemoria/src/wave.asdb'.
-run
-# KERNEL: ERROR  : TextIO internal error: Could not read type "STRING" from line.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /testeCacheI/U2/U2,  Process: Carga_Inicial_e_Ram_Memoria.
-# KERNEL: ERROR  : TextIO internal error: Could not read type "STRING" from line.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /testeCacheI/U2/U2,  Process: Carga_Inicial_e_Ram_Memoria.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 5 ns,  Iteration: 1,  Instance: /testeCacheI/U2/U2,  Process: Carga_Inicial_e_Ram_Memoria.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 5 ns,  Iteration: 2,  Instance: /testeCacheI/U2/U2,  Process: Carga_Inicial_e_Ram_Memoria.
-endsim
-# KERNEL: stopped at time: 4782475 ns
-# VSIM: Simulation has finished.
-# Adding file C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIleram.awc ... Done
-# Warning: /Ram/Clock has not been found in the ASDB file.
-# Warning: /Ram/enable has not been found in the ASDB file.
-# Warning: /Ram/r has not been found in the ASDB file.
-# Warning: /Ram/w has not been found in the ASDB file.
-# Warning: /Ram/ender has not been found in the ASDB file.
-# Warning: /Ram/pronto has not been found in the ASDB file.
-# Warning: /Ram/dadoOut has not been found in the ASDB file.
-# Warning: /Ram/Mram has not been found in the ASDB file.
-# Warning: /Ram/rw has not been found in the ASDB file.
-# Warning: /Ram/BE has not been found in the ASDB file.
-# Warning: /Ram/BP has not been found in the ASDB file.
-# Warning: /Ram/NA has not been found in the ASDB file.
-# Warning: /Ram/Tz has not been found in the ASDB file.
-# Warning: /Ram/Twrite has not been found in the ASDB file.
-# Warning: /Ram/Tsetup has not been found in the ASDB file.
-# Warning: /Ram/Tread has not been found in the ASDB file.
-# Warning: /testeCacheI/Clock has not been found in the ASDB file.
-# Warning: /testeCacheI/enable has not been found in the ASDB file.
-# Warning: /testeCacheI/w has not been found in the ASDB file.
-# Warning: /testeCacheI/data_out has not been found in the ASDB file.
-# Warning: /testeCacheI/endereco_in has not been found in the ASDB file.
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/CacheIeRAM.bde $dsn/src/testeCacheI.bde
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# File: .\..\compile\CacheIeRAM.vhd
-# Compile Entity "CacheIeRAM"
-# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
-# File: .\..\compile\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/CacheIeRAM.bde $dsn/src/testeCacheI.bde
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# Error: COMP96_0025: CacheI.vhd : (35, 38): Identifier or string literal expected.
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# File: .\..\compile\CacheIeRAM.vhd
-# Compile Entity "CacheIeRAM"
-# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
-# File: .\..\compile\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Compile failure 1 Errors 0 Warnings  Analysis time :  0.7 [s]
-acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/CacheIeRAM.bde $dsn/src/testeCacheI.bde
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
-# Compile Entity "Ram"
-# Compile Architecture "Ram" of Entity "Ram"
-# File: .\..\compile\TB_RAM.vhd
-# Compile Entity "TB_RAM"
-# Compile Architecture "TB_RAM" of Entity "TB_RAM"
-# File: .\..\compile\testeRAM.vhd
-# Compile Entity "testeRAM"
-# Compile Architecture "testeRAM" of Entity "testeRAM"
-# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
-# Compile Entity "CacheI"
-# Compile Architecture "comportamental" of Entity "CacheI"
-# File: .\..\compile\TB_CacheI.vhd
-# Compile Entity "TB_CacheI"
-# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
-# File: .\..\compile\CacheIeRAM.vhd
-# Compile Entity "CacheIeRAM"
-# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
-# File: .\..\compile\testeCacheI.vhd
-# Compile Entity "testeCacheI"
-# Compile Architecture "testeCacheI" of Entity "testeCacheI"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
 asim -O5 +access +r +m+testeCacheI testeCacheI testeCacheI
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.1 [s].
@@ -1535,20 +181,459 @@ asim -O5 +access +r +m+testeCacheI testeCacheI testeCacheI
 # KERNEL: Time resolution set to 1ps.
 # ELAB2: Elaboration final pass...
 # ELAB2: Create instances ...
+# ELAB2: Fatal Error: ELAB2_0007 CacheIeRAM.vhd (99): Length of actual parameter (32) does not match the length of formal parameter "data_in" (16) (from component).
+# ELAB2: Last instance before error: /testeCacheI/U2/U1
+# KERNEL: Error: E8005 : Kernel process initialization failed.
+# VSIM: Error: Simulation initialization failed.
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/CacheI.vhd $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde
+# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
+# DRC: Warning: CacheIeRAM.bde - 0 error(s), 8 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\CacheIeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde ...
+# Conversion functions added: 2
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "comportamental" of Entity "CacheI"
+# File: .\..\compile\TB_CacheI.vhd
+# Compile Entity "TB_CacheI"
+# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
+# File: .\..\compile\testeCacheI.vhd
+# Compile Entity "testeCacheI"
+# Compile Architecture "testeCacheI" of Entity "testeCacheI"
+# File: .\..\compile\CacheIeRAM.vhd
+# Compile Entity "CacheIeRAM"
+# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/CacheIeRAM.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\CacheIeRAM.vhd
+# Compile Entity "CacheIeRAM"
+# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/CacheIeRAM.bde
+# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
+# DRC: Warning: CacheIeRAM.bde - 0 error(s), 9 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\CacheIeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde ...
+# Conversion functions added: 2
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\CacheIeRAM.vhd
+# Compile Entity "CacheIeRAM"
+# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# Error: Could not find file: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
+# Error: Could not find file: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde $dsn/src/CacheI.vhd
+# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
+# DRC: Warning: CacheIeRAM.bde - 0 error(s), 8 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\CacheIeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde ...
+# Conversion functions added: 2
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# File: .\..\compile\TB_CacheI.vhd
+# Compile Entity "TB_CacheI"
+# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
+# File: .\..\compile\testeCacheI.vhd
+# Compile Entity "testeCacheI"
+# Compile Architecture "testeCacheI" of Entity "testeCacheI"
+# Error: ELAB1_0011: testeCacheI.bde(testeCacheI.vhd) : (74, 0): Port "Clcok" is on entity "CacheIeRAM" but not on the component declaration.
+# File: .\..\compile\CacheIeRAM.vhd
+# Compile Entity "CacheIeRAM"
+# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "CacheI" of Entity "CacheI"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  94.0 [ms]
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde $dsn/src/CacheI.vhd
+# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde'.
+# DRC: Warning: testeCacheI.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeCacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# File: .\..\compile\TB_CacheI.vhd
+# Compile Entity "TB_CacheI"
+# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
+# File: .\..\compile\testeCacheI.vhd
+# Compile Entity "testeCacheI"
+# Compile Architecture "testeCacheI" of Entity "testeCacheI"
+# Error: ELAB1_0011: testeCacheI.bde(testeCacheI.vhd) : (74, 0): Port "Clcok" is on entity "CacheIeRAM" but not on the component declaration.
+# File: .\..\compile\CacheIeRAM.vhd
+# Compile Entity "CacheIeRAM"
+# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "comportamental" of Entity "CacheI"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  94.0 [ms]
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde $dsn/src/CacheI.vhd
+# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde'.
+# DRC: testeCacheI.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeCacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde ...
+# Generation successful
+# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
+# DRC: Warning: CacheIeRAM.bde - 0 error(s), 8 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\CacheIeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde ...
+# Conversion functions added: 2
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# File: .\..\compile\TB_CacheI.vhd
+# Compile Entity "TB_CacheI"
+# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
+# File: .\..\compile\testeCacheI.vhd
+# Compile Entity "testeCacheI"
+# Compile Architecture "testeCacheI" of Entity "testeCacheI"
+# Error: ELAB1_0011: testeCacheI.bde(testeCacheI.vhd) : (74, 0): Port "Clcok" is on entity "CacheIeRAM" but not on the component declaration.
+# File: .\..\compile\CacheIeRAM.vhd
+# Compile Entity "CacheIeRAM"
+# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "comportamental" of Entity "CacheI"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/CacheIeRAM.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\CacheIeRAM.vhd
+# Compile Entity "CacheIeRAM"
+# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde $dsn/src/CacheI.vhd
+# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde'.
+# DRC: testeCacheI.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\testeCacheI.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\testeCacheI.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# File: .\..\compile\TB_CacheI.vhd
+# Compile Entity "TB_CacheI"
+# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
+# File: .\..\compile\testeCacheI.vhd
+# Compile Entity "testeCacheI"
+# Compile Architecture "testeCacheI" of Entity "testeCacheI"
+# File: .\..\compile\CacheIeRAM.vhd
+# Compile Entity "CacheIeRAM"
+# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "comportamental" of Entity "CacheI"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+testeCacheI testeCacheI testeCacheI
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Fatal Error: ELAB2_0007 CacheIeRAM.vhd (99): Length of actual parameter (32) does not match the length of formal parameter "dadoOut" (16) (from component).
+# ELAB2: Last instance before error: /testeCacheI/U2/U2
+# KERNEL: Error: E8005 : Kernel process initialization failed.
+# VSIM: Error: Simulation initialization failed.
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde $dsn/src/CacheI.vhd
+# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
+# DRC: Warning: CacheIeRAM.bde - 0 error(s), 8 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\CacheIeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde ...
+# Conversion functions added: 2
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# File: .\..\compile\TB_CacheI.vhd
+# Compile Entity "TB_CacheI"
+# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
+# File: .\..\compile\testeCacheI.vhd
+# Compile Entity "testeCacheI"
+# Compile Architecture "testeCacheI" of Entity "testeCacheI"
+# File: .\..\compile\CacheIeRAM.vhd
+# Compile Entity "CacheIeRAM"
+# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "comportamental" of Entity "CacheI"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+asim -O5 +access +r +m+testeCacheI testeCacheI testeCacheI
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Fatal Error: ELAB2_0007 CacheIeRAM.vhd (99): Length of actual parameter (32) does not match the length of formal parameter "dadoOut" (16) (from component).
+# ELAB2: Last instance before error: /testeCacheI/U2/U2
+# KERNEL: Error: E8005 : Kernel process initialization failed.
+# VSIM: Error: Simulation initialization failed.
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/RAM.vhd $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde $dsn/src/CacheI.vhd
+# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
+# DRC: Warning: CacheIeRAM.bde - 0 error(s), 8 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\CacheIeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde ...
+# Conversion functions added: 2
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# File: .\..\compile\TB_CacheI.vhd
+# Compile Entity "TB_CacheI"
+# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
+# File: .\..\compile\testeCacheI.vhd
+# Compile Entity "testeCacheI"
+# Compile Architecture "testeCacheI" of Entity "testeCacheI"
+# File: .\..\compile\CacheIeRAM.vhd
+# Compile Entity "CacheIeRAM"
+# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "comportamental" of Entity "CacheI"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+asim -O5 +access +r +m+testeCacheI testeCacheI testeCacheI
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Fatal Error: ELAB2_0007 CacheIeRAM.vhd (99): Length of actual parameter (16) does not match the length of formal parameter "ender" (8) (from component).
+# ELAB2: Last instance before error: /testeCacheI/U2/U2
+# KERNEL: Error: E8005 : Kernel process initialization failed.
+# VSIM: Error: Simulation initialization failed.
+# Error: Could not find file: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\RAM.vhd
+# CacheIeRAM: Updating instances of symbol 'Ram' from library 'hierarquiaDeMemoria' (U2)
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde $dsn/src/CacheI.vhd $dsn/src/Ram.vhd
+# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
+# DRC: Warning: CacheIeRAM.bde - 0 error(s), 8 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\CacheIeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde ...
+# Conversion functions added: 2
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# File: .\..\compile\TB_CacheI.vhd
+# Compile Entity "TB_CacheI"
+# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
+# File: .\..\compile\testeCacheI.vhd
+# Compile Entity "testeCacheI"
+# Compile Architecture "testeCacheI" of Entity "testeCacheI"
+# File: .\..\compile\CacheIeRAM.vhd
+# Compile Entity "CacheIeRAM"
+# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "comportamental" of Entity "CacheI"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\Ram.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+asim -O5 +access +r +m+testeCacheI testeCacheI testeCacheI
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Fatal Error: ELAB2_0007 CacheIeRAM.vhd (99): Length of actual parameter (32) does not match the length of formal parameter "dadoOut" (8) (from component).
+# ELAB2: Last instance before error: /testeCacheI/U2/U2
+# KERNEL: Error: E8005 : Kernel process initialization failed.
+# VSIM: Error: Simulation initialization failed.
+# CacheIeRAM: Updating instances of symbol 'Ram' from library 'hierarquiaDeMemoria' (U2)
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde $dsn/src/CacheI.vhd $dsn/src/Ram.vhd
+# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
+# DRC: Warning: CacheIeRAM.bde - 0 error(s), 6 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\CacheIeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde ...
+# Conversion functions added: 2
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# File: .\..\compile\TB_CacheI.vhd
+# Compile Entity "TB_CacheI"
+# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
+# File: .\..\compile\testeCacheI.vhd
+# Compile Entity "testeCacheI"
+# Compile Architecture "testeCacheI" of Entity "testeCacheI"
+# File: .\..\compile\CacheIeRAM.vhd
+# Compile Entity "CacheIeRAM"
+# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "comportamental" of Entity "CacheI"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\Ram.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+asim -O5 +access +r +m+testeCacheI testeCacheI testeCacheI
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Fatal Error: ELAB2_0007 CacheIeRAM.vhd (110): Length of actual parameter (8) does not match the length of formal parameter "data_out" (32) (from component).
+# ELAB2: Last instance before error: /testeCacheI/U2/U3
+# KERNEL: Error: E8005 : Kernel process initialization failed.
+# VSIM: Error: Simulation initialization failed.
+acom -O3 -e 100 -work hierarquiaDeMemoria -2002  $dsn/src/TB_RAM.bde $dsn/src/testeRAM.bde $dsn/src/TB_CacheI.bde $dsn/src/testeCacheI.bde $dsn/src/CacheIeRAM.bde $dsn/src/CacheI.vhd $dsn/src/Ram.vhd
+# DRC: Checking file 'C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde'.
+# DRC: Warning: CacheIeRAM.bde - 0 error(s), 5 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\CacheIeRAM.vhd from C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheIeRAM.bde ...
+# Conversion functions added: 2
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\TB_RAM.vhd
+# Compile Entity "TB_RAM"
+# Compile Architecture "TB_RAM" of Entity "TB_RAM"
+# File: .\..\compile\testeRAM.vhd
+# Compile Entity "testeRAM"
+# Compile Architecture "testeRAM" of Entity "testeRAM"
+# File: .\..\compile\TB_CacheI.vhd
+# Compile Entity "TB_CacheI"
+# Compile Architecture "TB_CacheI" of Entity "TB_CacheI"
+# File: .\..\compile\testeCacheI.vhd
+# Compile Entity "testeCacheI"
+# Compile Architecture "testeCacheI" of Entity "testeCacheI"
+# File: .\..\compile\CacheIeRAM.vhd
+# Compile Entity "CacheIeRAM"
+# Compile Architecture "CacheIeRAM" of Entity "CacheIeRAM"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\CacheI.vhd
+# Compile Entity "CacheI"
+# Compile Architecture "comportamental" of Entity "CacheI"
+# File: C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\Ram.vhd
+# Compile Entity "Ram"
+# Compile Architecture "Ram" of Entity "Ram"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+asim -O5 +access +r +m+testeCacheI testeCacheI testeCacheI
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
 # ELAB2: Create instances complete.
 # SLP: Started
 # SLP: Elaboration phase ...
 # SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
 # SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
 # KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 # KERNEL: Time: 0 ps,  Iteration: 0,  TOP instance.
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6225 kB (elbread=1280 elab2=4806 kernel=138 sdf=0)
+# Allocation: Simulator allocated 8778 kB (elbread=1280 elab2=7359 kernel=138 sdf=0)
 # KERNEL: ASDB file was created in location C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\wave.asdb
-#  20:38, terça-feira, 2 de julho de 2019
+#  23:55, terça-feira, 2 de julho de 2019
 #  Simulation has been initialized
 # 5 signal(s) traced.
 # Waveform file 'untitled.awc' connected to 'C:/Users/Fernanda/Documents/GitHub/MIPS-Pipeline/memoria/hierarquiaDeMemoria/hierarquiaDeMemoria/src/wave.asdb'.
@@ -1560,5 +645,5 @@ run
 # KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 # KERNEL: Time: 0 ps,  Iteration: 1,  TOP instance.
 endsim
-# KERNEL: stopped at time: 1221975 ns
+# KERNEL: stopped at time: 1157480 ns
 # VSIM: Simulation has finished.

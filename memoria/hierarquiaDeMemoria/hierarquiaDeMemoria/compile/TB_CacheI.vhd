@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\TB_CacheI.vhd
--- Generated   : Tue Jul  2 19:02:30 2019
+-- Generated   : Tue Jul  2 22:36:42 2019
 -- From        : C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_CacheI.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -26,11 +26,11 @@ use IEEE.std_logic_unsigned.all;
 
 entity TB_CacheI is
   port(
-       data_out : in STD_LOGIC_VECTOR(15 downto 0);
+       data_out : in STD_LOGIC_VECTOR(31 downto 0);
        Clock : out STD_LOGIC;
        enable : out STD_LOGIC;
        w : out STD_LOGIC;
-       endereco_in : out STD_LOGIC_VECTOR(7 downto 0)
+       endereco_in : out STD_LOGIC_VECTOR(15 downto 0)
   );
 end TB_CacheI;
 
@@ -49,7 +49,7 @@ begin
 -- statements	
 	enable <= '1';
 	w <= '0';	  
-	endereco_in <= x"00"; 
+	endereco_in <= x"0000"; 
 
 	
 end process Estimulos;

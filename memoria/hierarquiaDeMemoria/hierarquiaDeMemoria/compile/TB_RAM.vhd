@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\compile\TB_RAM.vhd
--- Generated   : Tue Jul  2 17:33:15 2019
+-- Generated   : Tue Jul  2 22:30:20 2019
 -- From        : C:\Users\Fernanda\Documents\GitHub\MIPS-Pipeline\memoria\hierarquiaDeMemoria\hierarquiaDeMemoria\src\TB_RAM.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -27,12 +27,12 @@ use IEEE.std_logic_unsigned.all;
 entity TB_RAM is
   port(
        pronto : in STD_LOGIC;
-       dadoOut : in STD_LOGIC_VECTOR(15 downto 0);
+       dadoOut : in STD_LOGIC_VECTOR(31 downto 0);
        Clock : out STD_LOGIC;
        enable : out STD_LOGIC;
        r : out STD_LOGIC;
        w : out STD_LOGIC;
-       enderecoIn : out STD_LOGIC_VECTOR(7 downto 0)
+       enderecoIn : out STD_LOGIC_VECTOR(15 downto 0)
   );
 end TB_RAM;
 
@@ -52,7 +52,7 @@ begin
 	enable <= '1';
 	r <= '1';
 	w <= '0';
-	enderecoIn <= x"0F"; 
+	enderecoIn <= x"0000"; 
 	--wait for 10 ns;
 	
 end process Estimulos;
